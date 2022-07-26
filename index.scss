@@ -1,8 +1,20 @@
 $font-family : 'Raleway';
+$font-style : 'normal';
+
+h2 {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #333333;
+}
 
 p {
     font-family: $font-family;
-    font-style: normal;
+    font-style: $font-style;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -21,30 +33,198 @@ nav {
     background: url(/images/energy-2181904_1920.jpg);
     box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.25);
 }
-.hero__hero-wrapper{
+
+.hero__hero-wrapper {
     display: flex;
     margin-left: 10%;
 }
-.hero__hero-title{
+
+.hero__hero-title {
     background: #333333;
     width: 595px;
     height: 228px;
 }
-.hero__greenDiv{
+
+.greenDiv {
     background: #87DE87;
-    height: 228px;
+    min-height: 100%;
     width: 32px;
 }
-.hero__title{
+
+.hero__title {
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
 }
 
+.card-section {
+    height: 730px;
+}
+
+.card-details {
+    //margin: 120px 108px 120px 108px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-wrapper__card {
+    margin: 32px 34px 32px 32px;
+}
+
+.card-wrapper__image-title-subtitle {
+    display: flex;
+    align-items: center;
+}
+
 .card-wrapper__card_theme {
     background: #333333;
+    width: 552px;
+    height: 348px;
+}
+
+.card-wrapper__image {
+    width: 80px;
+    height: 80px;
 }
 
 .card-wrapper__image_theme {
     background: #87DE87;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    //height: 1589px;
+    background: #333333;
+
+    h2 {
+        color: #FEFEFE;
+    }
+}
+
+.details-generators {
+    margin: 117px 108px 0 108px;
+}
+
+.details-wrapper__wind-generator {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 128px;
+}
+
+.details-wrapper__wind-image-wrapper {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    margin-left: 168px;
+}
+
+.details-wrapper__subsection-wind-generator {
+    width: 696px;
+    height: 435px;
+}
+
+.details-wrapper__solar-generator {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.details-wrapper__solar-image-wrapper {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 168px;
+}
+
+.details-wrapper__subsection-solar-generator {
+    width: 696px;
+    height: 435px;
+}
+
+.details-wrapper__button {
+    background: #87DE87;
+    border-radius: 12px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px;
+    color: #333333;
+    width: 274px;
+    height: 72px;
+    align-self: center;
+    margin: 96px 0 96px 0;
+}
+
+.newsletters-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletters-section__p-container {
+    max-width: 840px;
+}
+
+.newsletters-section__paragraph {
+    color: #333333;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.company-details{
+    max-height: 472px;
+    display: flex;
+    justify-content: space-around;
+}
+.company-details_theme{
+    background: #87DE87;
+}
+.company-details__adress,.company-details__about,.company-details__products,.company-details__social-media,.copyright{
+    p{
+        color: #333333;
+    }
+}
+.company-details__social-logos{
+    width: 264px;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 48px;
+        height: 48px;
+        background: #333333;
+        border-radius: 50%;
+    }
+}
+.copyright__details{
+    margin: 0 108px 0 108px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: #FEFEFE;
+    }
+}
+.copyright__p-privacy{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright_theme{
+    background: #333333;
 }
