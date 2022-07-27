@@ -22,19 +22,21 @@ nav {
 }
 
 .nav__page-name {
-  position: relative;
   width: 120px;
   height: 42px;
   background: #FEFEFE;
 }
-.nav__page-name label {
-  position: absolute;
-  bottom: -35%;
+.nav__page-name span {
+  position: relative;
+  bottom: -47%;
   color: #333333;
   font-family: "Raleway";
   font-style: "normal";
   font-weight: 500;
-  font-size: 36px;
+  font-size: 1.93rem;
+}
+.nav__page-name span:hover {
+  color: silver;
 }
 
 .nav__wrapper {
@@ -126,6 +128,7 @@ nav {
 
 .card-section {
   height: 730px;
+  width: 100%;
 }
 
 .card-wrapper {
@@ -324,33 +327,33 @@ nav {
 .company-details__adress p,
 .company-details__about p,
 .company-details__products p,
-.company-details__social-media p,
-.copyright p {
+.company-details__social-media p {
   color: #333333;
 }
 .company-details__adress p:first-child,
 .company-details__about p:first-child,
 .company-details__products p:first-child,
-.company-details__social-media p:first-child,
-.copyright p:first-child {
+.company-details__social-media p:first-child {
   font-weight: 600;
 }
 
 .footer__page-name {
-  position: relative;
   width: 220px;
   height: 72px;
   margin: 48px 0 30px 108px;
   background: #FEFEFE;
 }
-.footer__page-name label {
-  position: absolute;
-  bottom: -35%;
+.footer__page-name span {
+  position: relative;
+  bottom: -40%;
   color: #333333;
   font-family: "Raleway";
   font-style: "normal";
   font-weight: 500;
-  font-size: 66px;
+  font-size: 3.75rem;
+}
+.footer__page-name span:hover {
+  color: silver;
 }
 
 .company-details__social-logos {
