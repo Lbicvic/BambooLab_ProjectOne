@@ -21,12 +21,79 @@ nav {
   background: #87DE87;
 }
 
+.nav__page-name {
+  position: relative;
+  width: 120px;
+  height: 42px;
+  background: #FEFEFE;
+}
+.nav__page-name label {
+  position: absolute;
+  bottom: -35%;
+  color: #333333;
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.nav__wrapper {
+  display: flex;
+  height: 101px;
+  justify-content: space-between;
+  margin: 0 108px 0 108px;
+  align-items: center;
+}
+
+.nav__list-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__get-it-now-btn {
+  align-self: center;
+  width: 128px;
+  height: 40px;
+  background: #FEFEFE;
+}
+.nav__get-it-now-btn a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.nav__list {
+  list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__list > li {
+  display: inline;
+}
+.nav__list > li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .hero {
   display: flex;
   align-items: center;
   height: 640px;
   background: url(/images/energy-2181904_1920.jpg);
   box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .hero__hero-wrapper {
@@ -40,6 +107,10 @@ nav {
   height: 228px;
 }
 
+.hero__content {
+  margin: 32px 19px 32px 24px;
+}
+
 .greenDiv {
   background: #87DE87;
   min-height: 100%;
@@ -50,6 +121,7 @@ nav {
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
+  margin-bottom: 24px;
 }
 
 .card-section {
@@ -68,6 +140,19 @@ nav {
 .card-wrapper__image-title-subtitle {
   display: flex;
   align-items: center;
+}
+
+.card-wrapper__card-title p:first-child {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: "normal";
+}
+.card-wrapper__card-title p:nth-child(2) {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .card-wrapper__card_theme {
@@ -122,6 +207,12 @@ nav {
   width: 696px;
   height: 435px;
 }
+.details-wrapper__subsection-wind-generator h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FEFEFE;
+}
 
 .details-wrapper__solar-generator {
   display: flex;
@@ -139,6 +230,12 @@ nav {
 .details-wrapper__subsection-solar-generator {
   width: 696px;
   height: 435px;
+}
+.details-wrapper__subsection-solar-generator h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FEFEFE;
 }
 
 .details-wrapper__button {
@@ -178,18 +275,82 @@ nav {
   text-align: center;
 }
 
+.newsletters-section__input-button {
+  border: 1px solid #FEFEFE;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  margin-bottom: 120px;
+}
+.newsletters-section__input-button input {
+  border: none;
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.7);
+}
+.newsletters-section__input-button button {
+  background: #87DE87;
+  border-radius: 12px;
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 8px 8px 0;
+  color: #333333;
+}
+
 .company-details {
   max-height: 472px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.company-details__container {
+  display: flex;
+  margin: 0 252px 96px 108px;
+  justify-content: space-between;
 }
 
 .company-details_theme {
   background: #87DE87;
 }
 
-.company-details__adress p, .company-details__about p, .company-details__products p, .company-details__social-media p, .copyright p {
+.company-details__adress p,
+.company-details__about p,
+.company-details__products p,
+.company-details__social-media p,
+.copyright p {
   color: #333333;
+}
+.company-details__adress p:first-child,
+.company-details__about p:first-child,
+.company-details__products p:first-child,
+.company-details__social-media p:first-child,
+.copyright p:first-child {
+  font-weight: 600;
+}
+
+.footer__page-name {
+  position: relative;
+  width: 220px;
+  height: 72px;
+  margin: 48px 0 30px 108px;
+  background: #FEFEFE;
+}
+.footer__page-name label {
+  position: absolute;
+  bottom: -35%;
+  color: #333333;
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 500;
+  font-size: 66px;
 }
 
 .company-details__social-logos {
