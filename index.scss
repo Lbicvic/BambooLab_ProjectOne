@@ -3,25 +3,23 @@ $font-style : 'normal';
 $white-color : #FEFEFE;
 $black-color : #333333;
 $green-color : #87DE87;
-h2 {
-    font-family: $font-family;
-    font-style: $font-style;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    text-align: center;
 
-    color:$black-color;
+@mixin text-style($family:$font-family,$fstyle:$font-style,$fweight,$fsize,$lheight,$color :$white-color) {
+    font-family: $family;
+    font-style: $fsize;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lheight;
+    color: $color;
+}
+
+h2 {
+    @include text-style($font-family,$font-style,700,3rem ,3.5rem,$black-color);
+    text-align: center;
 }
 
 p {
-    font-family: $font-family;
-    font-style: $font-style;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.313rem;
-
-    color: $white-color;
+    @include text-style($font-family,$font-style,400,1.125rem,1.313rem,);
 }
 
 nav {
@@ -34,13 +32,9 @@ nav {
     background: $white-color;
 
     span {
+        @include text-style($font-family,$font-style,500,1.93rem,1.313rem,$black-color);
         position: relative;
-        bottom: -47%;
-        color: $black-color;
-        font-family: $font-family;
-        font-style: $font-style;
-        font-weight: 500;
-        font-size: 1.93rem;
+        bottom: -60%;
     }
 
     span:hover {
@@ -57,7 +51,6 @@ nav {
 }
 
 .nav__list-button {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -70,14 +63,10 @@ nav {
     background: $white-color;
 
     a {
-        font-weight: 700;
-        font-size: 1.125rem;
-        line-height: 2.5rem;
+        @include text-style($fweight : 700,$fsize : 1.125rem ,$lheight : 2.5rem,$color : $black-color);
         text-transform: uppercase;
         text-decoration: none;
-        color: $black-color;
         margin-left: 10px;
-
     }
 }
 
@@ -92,12 +81,8 @@ nav {
     display: inline;
 
     a {
+        @include text-style($fweight : 600,$fsize : 1.125rem ,$lheight : 1.313rem,$color : $black-color);
         text-decoration: none;
-        font-weight: 600;
-        font-size: 1.125rem;
-        line-height: 1.313rem;
-
-        color: $black-color;
     }
 }
 
@@ -135,9 +120,7 @@ nav {
 }
 
 .hero__title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 56px;
+    @include text-style($fweight : 600,$fsize : 3rem ,$lheight : 3.5rem);
     margin-bottom: 24px;
 }
 
@@ -171,18 +154,11 @@ nav {
 
 .card-wrapper__card-title {
     p:first-child {
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-        font-style: $font-style;
+        @include text-style($fweight : 600,$fsize : 1.5rem,$lheight : 1.75rem);
     }
 
     p:nth-child(2) {
-        font-style: italic;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-
+        @include text-style($fstyle : italic,$fweight : 400,$fsize : 1.5rem,$lheight : 1.75rem);
     }
 }
 
@@ -242,10 +218,7 @@ nav {
     margin-left: calc(252px - 108px);
 
     h3 {
-        font-weight: 600;
-        font-size: 2.25rem;
-        line-height: 2.625rem;
-        color: $white-color;
+        @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
     }
 }
 
@@ -268,30 +241,22 @@ nav {
     margin-right: calc(252px - 108px);
 
     h3 {
-        font-weight: 600;
-        font-size: 2.25rem;
-        line-height: 2.625rem;
-        color: $white-color;
+        @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
     }
 }
 
 .details-wrapper__button {
+    @include text-style($fweight : 700,$fsize : 1.125rem,$lheight : 1.313rem,$color : $black-color);
+    width: 274px;
+    height: 72px;
+    padding: 25px;
+    margin: 96px 0 96px 0;
     background: $green-color;
     border-color: $green-color;
     border-radius: 12px;
-    font-family: $font-family;
-    font-style: $font-style;
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.313rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 25px;
-    color: $black-color;
-    width: 274px;
-    height: 72px;
     align-self: center;
-    margin: 96px 0 96px 0;
 }
 
 .newsletters-section {
@@ -311,50 +276,36 @@ nav {
 }
 
 .newsletters-section__paragraph {
-    color: $black-color;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    @include text-style($fweight : 500,$fsize : 1.5rem,$lheight : 1.75rem,$color : $black-color);
     text-align: center;
 }
 
 .newsletters-section__input-button {
+    display: flex;
+    width: 696px;
+    margin-top: calc(70px - 24px);
     border: 1px solid $white-color;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    margin-top: calc(70px - 24px);
-    width: 696px;
-    display: flex;
     input {
+        @include text-style($fstyle : italic,$fweight : 400,$fsize : 1.125rem,$lheight : 1.313rem,$color :  rgba(51, 51, 51, 0.7));
         width: calc(696px - 132px);
         border: none;
-        margin-left: 20px;
-        font-family: $font-family;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 1.313rem;
         text-align: center;
-        color: rgba(51, 51, 51, 0.7);
     }
     input::placeholder{
         text-align: left;
     }
     button {
+        @include text-style($fweight : 700,$fsize : 1.5rem,$lheight : 1.75rem,$color : $black-color);
         width: 120px;
         height: 48px;
+        margin: 8px 8px 8px 0;
         background: $green-color;
         border-color: $green-color;
         border-radius: 12px;
-        font-family: $font-family;
-        font-style: $font-style;
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 1.75rem;
         text-align: center;
         text-transform: uppercase;
-        margin: 8px 8px 8px 0;
-        color: $black-color;
     }
 }
 
@@ -398,13 +349,9 @@ nav {
     background: $white-color;
 
     span {
+        @include text-style($fweight : 500,$fsize : 3.75rem,$lheight : 4rem,$color : $black-color);
         position: relative;
         bottom: -40%;
-        color: $black-color;
-        font-family: $font-family;
-        font-style: $font-style;
-        font-weight: 500;
-        font-size: 3.75rem;
     }
 
     span:hover {
