@@ -1,40 +1,42 @@
 $font-family : 'Raleway';
 $font-style : 'normal';
-
+$white-color : #FEFEFE;
+$black-color : #333333;
+$green-color : #87DE87;
 h2 {
     font-family: $font-family;
     font-style: $font-style;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
 
-    color: #333333;
+    color:$black-color;
 }
 
 p {
     font-family: $font-family;
     font-style: $font-style;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
 
-    color: #FEFEFE;
+    color: $white-color;
 }
 
 nav {
-    background: #87DE87;
+    background: $green-color;
 }
 
 .nav__page-name {
     width: 120px;
     height: 42px;
-    background: #FEFEFE;
+    background: $white-color;
 
     span {
         position: relative;
         bottom: -47%;
-        color: #333333;
+        color: $black-color;
         font-family: $font-family;
         font-style: $font-style;
         font-weight: 500;
@@ -65,15 +67,15 @@ nav {
     align-self: center;
     width: 128px;
     height: 40px;
-    background: #FEFEFE;
+    background: $white-color;
 
     a {
         font-weight: 700;
-        font-size: 18px;
-        line-height: 40px;
+        font-size: 1.125rem;
+        line-height: 2.5rem;
         text-transform: uppercase;
         text-decoration: none;
-        color: #333333;
+        color: $black-color;
         margin-left: 10px;
 
     }
@@ -92,10 +94,10 @@ nav {
     a {
         text-decoration: none;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 1.125rem;
+        line-height: 1.313rem;
 
-        color: #333333;
+        color: $black-color;
     }
 }
 
@@ -116,7 +118,7 @@ nav {
 }
 
 .hero__hero-title {
-    background: #333333;
+    background: $black-color;
     width: 595px;
     height: 228px;
 }
@@ -127,7 +129,7 @@ nav {
 }
 
 .greenDiv {
-    background: #87DE87;
+    background: $green-color;
     min-height: 100%;
     width: 32px;
 }
@@ -140,12 +142,12 @@ nav {
 }
 
 .card-section {
-    height: 730px;
+    height: 650px;
     width: 100%;
+    margin-top: 80px;
 }
 
 .card-details {
-    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +157,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: calc(552px + 552px + 600px);
-    margin: 86px 108px 0 108px;
+    margin: 46px 108px 0 108px;
 }
 
 .card-wrapper__card {
@@ -170,22 +172,22 @@ nav {
 .card-wrapper__card-title {
     p:first-child {
         font-weight: 600;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
         font-style: $font-style;
     }
 
     p:nth-child(2) {
         font-style: italic;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
 
     }
 }
 
 .card-wrapper__card_theme {
-    background: #333333;
+    background: $black-color;
     width: 552px;
     height: 348px;
 }
@@ -196,7 +198,7 @@ nav {
 }
 
 .card-wrapper__image_theme {
-    background: #87DE87;
+    background: $green-color;
     width: 120px;
     height: 120px;
     display: flex;
@@ -210,15 +212,15 @@ nav {
     display: flex;
     flex-direction: column;
     //height: 1589px;
-    background: #333333;
+    background: $black-color;
 
     h2 {
-        color: #FEFEFE;
+        color: $white-color;
     }
 }
 
 .details-generators {
-    margin: 117px 108px 0 108px;
+    margin: 77px 108px 0 108px;
 }
 
 .details-wrapper__wind-generator {
@@ -241,9 +243,9 @@ nav {
 
     h3 {
         font-weight: 600;
-        font-size: 36px;
-        line-height: 42px;
-        color: #FEFEFE;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        color: $white-color;
     }
 }
 
@@ -267,24 +269,25 @@ nav {
 
     h3 {
         font-weight: 600;
-        font-size: 36px;
-        line-height: 42px;
-        color: #FEFEFE;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        color: $white-color;
     }
 }
 
 .details-wrapper__button {
-    background: #87DE87;
+    background: $green-color;
+    border-color: $green-color;
     border-radius: 12px;
     font-family: $font-family;
     font-style: $font-style;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
     text-align: center;
     text-transform: uppercase;
     padding: 25px;
-    color: #333333;
+    color: $black-color;
     width: 274px;
     height: 72px;
     align-self: center;
@@ -296,6 +299,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 80px 0 120px 0;
+    h2{
+        
+        margin-bottom: 0;
+    }
 }
 
 .newsletters-section__p-container {
@@ -303,43 +311,50 @@ nav {
 }
 
 .newsletters-section__paragraph {
-    color: #333333;
+    color: $black-color;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     text-align: center;
 }
 
 .newsletters-section__input-button {
-    border: 1px solid #FEFEFE;
+    border: 1px solid $white-color;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    margin-bottom: 120px;
-
+    margin-top: calc(70px - 24px);
+    width: 696px;
+    display: flex;
     input {
+        width: calc(696px - 132px);
         border: none;
+        margin-left: 20px;
         font-family: $font-family;
         font-style: italic;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 1.125rem;
+        line-height: 1.313rem;
         text-align: center;
-
         color: rgba(51, 51, 51, 0.7);
     }
-
+    input::placeholder{
+        text-align: left;
+    }
     button {
-        background: #87DE87;
+        width: 120px;
+        height: 48px;
+        background: $green-color;
+        border-color: $green-color;
         border-radius: 12px;
         font-family: $font-family;
         font-style: $font-style;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
         text-align: center;
         text-transform: uppercase;
         margin: 8px 8px 8px 0;
-        color: #333333;
+        color: $black-color;
     }
 }
 
@@ -356,7 +371,7 @@ nav {
 }
 
 .company-details_theme {
-    background: #87DE87;
+    background: $green-color;
 }
 
 .company-details__adress,
@@ -364,11 +379,15 @@ nav {
 .company-details__products,
 .company-details__social-media {
     p {
-        color: #333333;
+        color: $black-color;
     }
 
     p:first-child {
         font-weight: 600;
+    }
+    a{
+        text-decoration: none;
+        color: $black-color;
     }
 }
 
@@ -376,12 +395,12 @@ nav {
     width: 220px;
     height: 72px;
     margin: 48px 0 30px 108px;
-    background: #FEFEFE;
+    background: $white-color;
 
     span {
         position: relative;
         bottom: -40%;
-        color: #333333;
+        color: $black-color;
         font-family: $font-family;
         font-style: $font-style;
         font-weight: 500;
@@ -401,7 +420,7 @@ nav {
     img {
         width: 48px;
         height: 48px;
-        background: #333333;
+        background: $black-color;
         border-radius: 50%;
     }
 }
@@ -412,7 +431,7 @@ nav {
     justify-content: space-between;
 
     p {
-        color: #FEFEFE;
+        color: $white-color;
     }
 }
 
@@ -423,5 +442,5 @@ nav {
 }
 
 .copyright_theme {
-    background: #333333;
+    background: $black-color;
 }
