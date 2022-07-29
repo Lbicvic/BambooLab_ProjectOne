@@ -1,0 +1,60 @@
+.details-section {
+    display: flex;
+    flex-direction: column;
+    //height: 1589px;
+    background: $black-color;
+
+    h2 {
+        color: $white-color;
+    }
+}
+
+.details-generators {
+    margin: 77px 108px 0 108px;
+}
+
+.details-wrapper__wind-generator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.details-wrapper__wind-image-wrapper {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    margin-left: 168px;
+}
+
+.details-wrapper__subsection-wind-generator {
+    width: 696px;
+    height: 435px;
+    margin-left: calc(252px - 108px);
+
+    h3 {
+        @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
+    }
+}
+
+.details-wrapper__solar-generator {
+    display: flex;
+    justify-content: center;
+}
+
+.details-wrapper__solar-image-wrapper {
+    width: 696px;
+    height: 480px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 168px;
+}
+
+.details-wrapper__subsection-solar-generator {
+    width: 696px;
+    height: 435px;
+    margin-right: calc(252px - 108px);
+
+    h3 {
+        @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
+    }
+}

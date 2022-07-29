@@ -1,0 +1,63 @@
+nav {
+    background: $green-color;
+}
+
+.nav__company-logo {
+    width: 120px;
+    height: 42px;
+    background: $white-color;
+
+    span {
+        @include text-style($fweight:500,$fsize:1.93rem,$lheight:1.313rem,$color :$black-color);
+        position: relative;
+        bottom: -60%;
+    }
+
+    span:hover {
+        color: silver;
+    }
+}
+
+.nav__wrapper {
+    display: flex;
+    height: 101px;
+    justify-content: space-between;
+    margin: 0 108px 0 108px;
+    align-items: center;
+}
+
+.nav__list-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__get-it-now-btn {
+    align-self: center;
+    width: 128px;
+    height: 40px;
+    background: $white-color;
+
+    a {
+        @include text-style($fweight : 700,$fsize : 1.125rem ,$lheight : 2.5rem,$color : $black-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+}
+
+.nav__list {
+    list-style: none;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__list>li {
+    display: inline;
+
+    a {
+        @include text-style($fweight : 600,$fsize : 1.125rem ,$lheight : 1.313rem,$color : $black-color);
+        text-decoration: none;
+    }
+}
