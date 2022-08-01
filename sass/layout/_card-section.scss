@@ -28,11 +28,13 @@
 
 .card-wrapper__card-title {
     p:first-child {
-        @include text-style($fweight : 600,$fsize : 1.5rem,$lheight : 1.75rem);
+        @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem);
+        margin-bottom: 0.625rem;
     }
 
     p:nth-child(2) {
-        @include text-style($fstyle: italic,$fweight : 400,$fsize : 1.5rem,$lheight : 1.75rem);
+        @include text-style($fstyle: italic, $fweight: 400, $fsize: 1.5rem, $lheight: 1.75rem);
+        margin-top: 0.625rem;
     }
 }
 

@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     margin: 5rem 0 7.5rem 0;
-    h2{
-        
+
+    h2 {
         margin-bottom: 0;
     }
 }
@@ -15,6 +15,6 @@
 }
 
 .newsletters-section__paragraph {
-    @include text-style($fweight : 500,$fsize : 1.5rem,$lheight : 1.75rem,$color : $black-color);
+    @include text-style($fweight: 500, $fsize: 1.5rem, $lheight: 1.75rem, $color: $black-color);
     text-align: center;
 }

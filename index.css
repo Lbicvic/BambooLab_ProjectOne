@@ -171,6 +171,7 @@ p {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: #FEFEFE;
+  margin-bottom: 0.625rem;
 }
 .card-wrapper__card-title p:nth-child(2) {
   font-family: "Raleway";
@@ -179,6 +180,7 @@ p {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: #FEFEFE;
+  margin-top: 0.625rem;
 }
 
 .card-wrapper__theme {
@@ -226,11 +228,11 @@ p {
   width: 43.5rem;
   height: 30rem;
   display: flex;
-  margin-left: 10.5rem;
+  margin-left: 8.5rem;
 }
 
 .details-wrapper__subsection-wind-generator {
-  margin-left: 9rem;
+  margin-left: 6.6875rem;
 }
 .details-wrapper__subsection-wind-generator h3 {
   font-family: "Raleway";
@@ -255,11 +257,11 @@ p {
   height: 30rem;
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 10.5rem;
+  margin-right: 8.5rem;
 }
 
 .details-wrapper__subsection-solar-generator {
-  margin-right: 9rem;
+  margin-right: 6.6875rem;
 }
 .details-wrapper__subsection-solar-generator h3 {
   font-family: "Raleway";

@@ -8,7 +8,7 @@ nav {
     background: $white-color;
 
     span {
-        @include text-style($fweight:600,$fsize:1.7rem,$lheight:1.313rem,$color :$black-color);
+        @include text-style($fweight: 600, $fsize: 1.7rem, $lheight: 1.313rem, $color: $black-color);
         position: relative;
         bottom: -67%;
     }
@@ -39,7 +39,7 @@ nav {
     background: $white-color;
 
     a {
-        @include text-style($fweight : 700,$fsize : 1.125rem ,$lheight : 2.5rem,$color : $black-color);
+        @include text-style($fweight: 700, $fsize: 1.125rem, $lheight: 2.5rem, $color: $black-color);
         text-transform: uppercase;
         text-decoration: none;
         margin-left: 0.625rem;
@@ -53,11 +53,11 @@ nav {
     justify-content: space-evenly;
 }
 
-.nav__list>li {
+.nav__list > li {
     display: inline;
 
     a {
-        @include text-style($fweight : 600,$fsize : 1.125rem ,$lheight : 1.313rem,$color : $black-color);
+        @include text-style($fweight: 600, $fsize: 1.125rem, $lheight: 1.313rem, $color: $black-color);
         text-decoration: none;
     }
 }

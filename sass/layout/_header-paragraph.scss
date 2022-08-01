@@ -1,8 +1,8 @@
 h2 {
-    @include text-style($fweight : 700,$fsize:3rem ,$lheight:3.5rem,$color :$black-color);
+    @include text-style($fweight: 700, $fsize: 3rem, $lheight: 3.5rem, $color: $black-color);
     text-align: center;
 }
 
 p {
-    @include text-style($fweight : 400,$fsize:1.125rem,$lheight:1.313rem);
+    @include text-style($fweight: 400, $fsize: 1.125rem, $lheight: 1.313rem);
 }

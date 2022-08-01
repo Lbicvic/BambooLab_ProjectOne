@@ -22,7 +22,8 @@
     p:first-child {
         font-weight: 600;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: $black-color;
     }
@@ -35,7 +36,7 @@
     background: $white-color;
 
     span {
-        @include text-style($fweight : 600,$fsize : 3.3rem,$lheight : 4rem,$color : $black-color);
+        @include text-style($fweight: 600, $fsize: 3.3rem, $lheight: 4rem, $color: $black-color);
         position: relative;
         bottom: -45%;
     }
@@ -57,6 +58,7 @@
         border-radius: 50%;
     }
 }
+
 .copyright__details {
     margin: 0 6.75rem 0 6.75rem;
     display: flex;
@@ -73,6 +75,6 @@
     justify-content: space-between;
 }
 
-.copyright{
+.copyright {
     background: $black-color;
 }
