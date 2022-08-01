@@ -1,21 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 nav {
   background: #87DE87;
 }
 
 .nav__company-logo {
-  width: 120px;
-  height: 42px;
+  width: 7.5rem;
+  height: 2.625rem;
   background: #FEFEFE;
 }
 .nav__company-logo span {
   font-family: "Raleway";
   font-style: "normal";
-  font-weight: 500;
-  font-size: 1.93rem;
+  font-weight: 600;
+  font-size: 1.7rem;
   line-height: 1.313rem;
   color: #333333;
   position: relative;
-  bottom: -60%;
+  bottom: -67%;
 }
 .nav__company-logo span:hover {
   color: silver;
@@ -23,9 +24,9 @@ nav {
 
 .nav__wrapper {
   display: flex;
-  height: 101px;
+  height: 6.3125rem;
   justify-content: space-between;
-  margin: 0 108px 0 108px;
+  margin: 0 6.75rem 0 6.75rem;
   align-items: center;
 }
 
@@ -37,8 +38,8 @@ nav {
 
 .nav__get-it-now-btn {
   align-self: center;
-  width: 128px;
-  height: 40px;
+  width: 8rem;
+  height: 2.5rem;
   background: #FEFEFE;
 }
 .nav__get-it-now-btn a {
@@ -50,12 +51,12 @@ nav {
   color: #333333;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .nav__list {
   list-style: none;
-  width: 400px;
+  width: 25rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -95,9 +96,9 @@ p {
 .hero {
   display: flex;
   align-items: center;
-  height: 640px;
-  background: url(/images/energy-2181904_1920.jpg);
-  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.25);
+  height: 40rem;
+  background: url(./images/energy-2181904_1920.jpg);
+  box-shadow: inset 0rem 0rem 1.5rem rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -110,18 +111,18 @@ p {
 
 .hero__description {
   background: #333333;
-  width: 595px;
-  height: 228px;
+  width: 37.1875rem;
+  height: 14.25rem;
 }
 
 .hero__content {
-  margin: 32px 19px 32px 24px;
+  margin: 2rem 1.1875rem 2rem 1.5rem;
 }
 
 .greenDiv {
   background: #87DE87;
   min-height: 100%;
-  width: 32px;
+  width: 2rem;
 }
 
 .hero__title {
@@ -131,14 +132,14 @@ p {
   font-size: 3rem;
   line-height: 3.5rem;
   color: #FEFEFE;
-  margin-bottom: 24px;
-  margin-top: 32px;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .card-section {
-  height: 650px;
+  height: 40.625rem;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .card-details {
@@ -150,12 +151,12 @@ p {
 .card-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1704px;
-  margin: 46px 108px 0 108px;
+  width: 106.5rem;
+  margin: 2.875rem 6.75rem 0 6.75rem;
 }
 
 .card-wrapper__card {
-  margin: 32px 34px 32px 32px;
+  margin: 2rem 2.125rem 2rem 2rem;
 }
 
 .card-wrapper__content {
@@ -180,26 +181,26 @@ p {
   color: #FEFEFE;
 }
 
-.card-wrapper__card_theme {
+.card-wrapper__theme {
   background: #333333;
-  width: 552px;
-  height: 348px;
+  width: 34.5rem;
+  height: 21.75rem;
 }
 
 .card-wrapper__image {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
 }
 
-.card-wrapper__image_theme {
+.card-wrapper__circle-image {
   background: #87DE87;
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 .details-section {
@@ -212,26 +213,24 @@ p {
 }
 
 .details-generators {
-  margin: 77px 108px 0 108px;
+  margin: 4.8125rem 6.75rem 0 6.75rem;
 }
 
 .details-wrapper__wind-generator {
   display: flex;
   justify-content: center;
-  margin-bottom: 128px;
+  margin-bottom: 8rem;
 }
 
 .details-wrapper__wind-image-wrapper {
-  width: 696px;
-  height: 480px;
+  width: 43.5rem;
+  height: 30rem;
   display: flex;
-  margin-left: 168px;
+  margin-left: 10.5rem;
 }
 
 .details-wrapper__subsection-wind-generator {
-  width: 696px;
-  height: 435px;
-  margin-left: 144px;
+  margin-left: 9rem;
 }
 .details-wrapper__subsection-wind-generator h3 {
   font-family: "Raleway";
@@ -240,6 +239,10 @@ p {
   font-size: 2.25rem;
   line-height: 2.625rem;
   color: #FEFEFE;
+  margin: 0 0 0.75rem 0;
+}
+.details-wrapper__subsection-wind-generator p {
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .details-wrapper__solar-generator {
@@ -248,17 +251,15 @@ p {
 }
 
 .details-wrapper__solar-image-wrapper {
-  width: 696px;
-  height: 480px;
+  width: 43.5rem;
+  height: 30rem;
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 168px;
+  margin-right: 10.5rem;
 }
 
 .details-wrapper__subsection-solar-generator {
-  width: 696px;
-  height: 435px;
-  margin-right: 144px;
+  margin-right: 9rem;
 }
 .details-wrapper__subsection-solar-generator h3 {
   font-family: "Raleway";
@@ -267,6 +268,10 @@ p {
   font-size: 2.25rem;
   line-height: 2.625rem;
   color: #FEFEFE;
+  margin: 0 0 0.75rem 0;
+}
+.details-wrapper__subsection-solar-generator p {
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .newsletters-section {
@@ -274,14 +279,14 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80px 0 120px 0;
+  margin: 5rem 0 7.5rem 0;
 }
 .newsletters-section h2 {
   margin-bottom: 0;
 }
 
 .newsletters-section__p-container {
-  max-width: 840px;
+  max-width: 52.5rem;
 }
 
 .newsletters-section__paragraph {
@@ -295,19 +300,16 @@ p {
 }
 
 .company-details {
-  max-height: 472px;
+  max-height: 29.5rem;
   display: flex;
   flex-direction: column;
+  background: #87DE87;
 }
 
 .company-details__container {
   display: flex;
-  margin: 0 252px 96px 108px;
+  margin: 0 15.75rem 6rem 6.75rem;
   justify-content: space-between;
-}
-
-.company-details_theme {
-  background: #87DE87;
 }
 
 .company-details__adress p,
@@ -331,39 +333,39 @@ p {
 }
 
 .company-details__logo {
-  width: 220px;
-  height: 72px;
-  margin: 48px 0 30px 108px;
+  width: 13.75rem;
+  height: 4.5rem;
+  margin: 3rem 0 1.875rem 6.75rem;
   background: #FEFEFE;
 }
 .company-details__logo span {
   font-family: "Raleway";
   font-style: "normal";
-  font-weight: 500;
-  font-size: 3.75rem;
+  font-weight: 600;
+  font-size: 3.3rem;
   line-height: 4rem;
   color: #333333;
   position: relative;
-  bottom: -40%;
+  bottom: -45%;
 }
 .company-details__logo span:hover {
   color: silver;
 }
 
 .company-details__social-logos {
-  width: 264px;
+  width: 16.5rem;
   display: flex;
   justify-content: space-between;
 }
 .company-details__social-logos img {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   background: #333333;
   border-radius: 50%;
 }
 
 .copyright__details {
-  margin: 0 108px 0 108px;
+  margin: 0 6.75rem 0 6.75rem;
   display: flex;
   justify-content: space-between;
 }
@@ -372,12 +374,12 @@ p {
 }
 
 .copyright__privacy {
-  width: 150px;
+  width: 9.375rem;
   display: flex;
   justify-content: space-between;
 }
 
-.copyright_theme {
+.copyright {
   background: #333333;
 }
 
@@ -388,13 +390,13 @@ p {
   font-size: 1.125rem;
   line-height: 1.313rem;
   color: #333333;
-  width: 274px;
-  height: 72px;
-  padding: 25px;
-  margin: 96px 0 96px 0;
+  width: 17.125rem;
+  height: 4.5rem;
+  padding: 1.5625rem;
+  margin: 6rem 0 6rem 0;
   background: #87DE87;
   border-color: #87DE87;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
@@ -402,11 +404,11 @@ p {
 
 .newsletters-section__input-button {
   display: flex;
-  width: 696px;
-  margin-top: 46px;
-  border: 1px solid #FEFEFE;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
+  width: 43.5rem;
+  margin-top: 2.875rem;
+  border: 0.0625rem solid #FEFEFE;
+  box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.75rem;
 }
 .newsletters-section__input-button input {
   font-family: "Raleway";
@@ -415,8 +417,8 @@ p {
   font-size: 1.125rem;
   line-height: 1.313rem;
   color: rgba(51, 51, 51, 0.7);
-  width: 564px;
-  margin-left: 20px;
+  width: 35.25rem;
+  margin-left: 1.25rem;
   border: none;
   text-align: center;
 }
@@ -436,12 +438,12 @@ p {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: #333333;
-  width: 120px;
-  height: 48px;
-  margin: 8px 8px 8px 0;
+  width: 7.5rem;
+  height: 3rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
   background: #87DE87;
   border-color: #87DE87;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   text-align: center;
   text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

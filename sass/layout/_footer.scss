@@ -1,17 +1,14 @@
 .company-details {
-    max-height: 472px;
+    max-height: 29.5rem;
     display: flex;
     flex-direction: column;
+    background: $green-color;
 }
 
 .company-details__container {
     display: flex;
-    margin: 0 252px 96px 108px;
+    margin: 0 15.75rem 6rem 6.75rem;
     justify-content: space-between;
-}
-
-.company-details_theme {
-    background: $green-color;
 }
 
 .company-details__adress,
@@ -32,15 +29,15 @@
 }
 
 .company-details__logo {
-    width: 220px;
-    height: 72px;
-    margin: 48px 0 30px 108px;
+    width: 13.75rem;
+    height: 4.5rem;
+    margin: 3rem 0 1.875rem 6.75rem;
     background: $white-color;
 
     span {
-        @include text-style($fweight : 500,$fsize : 3.75rem,$lheight : 4rem,$color : $black-color);
+        @include text-style($fweight : 600,$fsize : 3.3rem,$lheight : 4rem,$color : $black-color);
         position: relative;
-        bottom: -40%;
+        bottom: -45%;
     }
 
     span:hover {
@@ -49,19 +46,19 @@
 }
 
 .company-details__social-logos {
-    width: 264px;
+    width: 16.5rem;
     display: flex;
     justify-content: space-between;
 
     img {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         background: $black-color;
         border-radius: 50%;
     }
 }
 .copyright__details {
-    margin: 0 108px 0 108px;
+    margin: 0 6.75rem 0 6.75rem;
     display: flex;
     justify-content: space-between;
 
@@ -71,11 +68,11 @@
 }
 
 .copyright__privacy {
-    width: 150px;
+    width: 9.375rem;
     display: flex;
     justify-content: space-between;
 }
 
-.copyright_theme {
+.copyright{
     background: $black-color;
 }

@@ -1,7 +1,7 @@
 .card-section {
-    height: 650px;
+    height: 40.625rem;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .card-details {
@@ -13,12 +13,12 @@
 .card-wrapper {
     display: flex;
     justify-content: space-between;
-    width: calc(552px + 552px + 600px);
-    margin: 46px 108px 0 108px;
+    width: calc(34.5rem + 34.5rem + 37.5rem);
+    margin: 2.875rem 6.75rem 0 6.75rem;
 }
 
 .card-wrapper__card {
-    margin: 32px 34px 32px 32px;
+    margin: 2rem 2.125rem 2rem 2rem;
 }
 
 .card-wrapper__content {
@@ -36,24 +36,24 @@
     }
 }
 
-.card-wrapper__card_theme {
+.card-wrapper__theme {
     background: $black-color;
-    width: 552px;
-    height: 348px;
+    width: 34.5rem;
+    height: 21.75rem;
 }
 
 .card-wrapper__image {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
 }
 
-.card-wrapper__image_theme {
+.card-wrapper__circle-image {
     background: $green-color;
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 24px;
+    margin-right: 1.5rem;
 }

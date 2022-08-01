@@ -1,38 +1,37 @@
 .details-section {
     display: flex;
     flex-direction: column;
-    //height: 1589px;
     background: $black-color;
-
     h2 {
         color: $white-color;
     }
 }
 
 .details-generators {
-    margin: 77px 108px 0 108px;
+    margin: 4.8125rem 6.75rem 0 6.75rem;
 }
 
 .details-wrapper__wind-generator {
     display: flex;
     justify-content: center;
-    margin-bottom: 128px;
+    margin-bottom: 8rem;
 }
 
 .details-wrapper__wind-image-wrapper {
-    width: 696px;
-    height: 480px;
+    width: 43.5rem;
+    height: 30rem;
     display: flex;
-    margin-left: 168px;
+    margin-left: 10.5rem;
 }
 
 .details-wrapper__subsection-wind-generator {
-    width: 696px;
-    height: 435px;
-    margin-left: calc(252px - 108px);
-
+    margin-left: calc(15.75rem - 6.75rem);
     h3 {
         @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
+        margin: 0 0 0.75rem 0;
+    }
+    p{
+        margin: 0.75rem 0 0.75rem 0;
     }
 }
 
@@ -42,19 +41,20 @@
 }
 
 .details-wrapper__solar-image-wrapper {
-    width: 696px;
-    height: 480px;
+    width: 43.5rem;
+    height: 30rem;
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 168px;
+    margin-right: 10.5rem;
 }
 
 .details-wrapper__subsection-solar-generator {
-    width: 696px;
-    height: 435px;
-    margin-right: calc(252px - 108px);
-
+    margin-right: calc(15.75rem - 6.75rem);
     h3 {
         @include text-style($fweight : 600,$fsize : 2.25rem,$lheight : 2.625rem);
+        margin: 0 0 0.75rem 0;
+    }
+    p{
+       margin: 0.75rem 0 0.75rem 0;
     }
 }
