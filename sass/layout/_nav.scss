@@ -8,7 +8,7 @@ nav {
     background: $white-color;
 
     span {
-        @include text-style($fweight: 600, $fsize: 1.7rem, $lheight: 1.313rem, $color: $black-color);
+        @include text-style($fweight: 600, $fsize: 1.65rem, $lheight: 1.313rem, $color: $black-color);
         position: relative;
         bottom: -67%;
     }
