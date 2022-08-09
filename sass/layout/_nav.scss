@@ -2,22 +2,6 @@ nav {
     background: $green-color;
 }
 
-.nav__company-logo {
-    width: 7.5rem;
-    height: 2.625rem;
-    background: $white-color;
-
-    span {
-        @include text-style($fweight: 600, $fsize: 1.65rem, $lheight: 1.313rem, $color: $black-color);
-        position: relative;
-        bottom: -67%;
-    }
-
-    span:hover {
-        color: silver;
-    }
-}
-
 .nav__wrapper {
     display: flex;
     height: 6.3125rem;

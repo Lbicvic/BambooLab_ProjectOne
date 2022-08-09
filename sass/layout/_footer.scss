@@ -30,20 +30,7 @@
 }
 
 .company-details__logo {
-    width: 13.75rem;
-    height: 4.5rem;
     margin: 3rem 0 1.875rem 6.75rem;
-    background: $white-color;
-
-    span {
-        @include text-style($fweight: 600, $fsize: 3.3rem, $lheight: 4rem, $color: $black-color);
-        position: relative;
-        bottom: -45%;
-    }
-
-    span:hover {
-        color: silver;
-    }
 }
 
 .company-details__social-logos {

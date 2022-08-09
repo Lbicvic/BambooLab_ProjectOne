@@ -3,25 +3,6 @@ nav {
   background: #87DE87;
 }
 
-.nav__company-logo {
-  width: 7.5rem;
-  height: 2.625rem;
-  background: #FEFEFE;
-}
-.nav__company-logo span {
-  font-family: "Raleway";
-  font-style: "normal";
-  font-weight: 600;
-  font-size: 1.65rem;
-  line-height: 1.313rem;
-  color: #333333;
-  position: relative;
-  bottom: -67%;
-}
-.nav__company-logo span:hover {
-  color: silver;
-}
-
 .nav__wrapper {
   display: flex;
   height: 6.3125rem;
@@ -335,23 +316,7 @@ p {
 }
 
 .company-details__logo {
-  width: 13.75rem;
-  height: 4.5rem;
   margin: 3rem 0 1.875rem 6.75rem;
-  background: #FEFEFE;
-}
-.company-details__logo span {
-  font-family: "Raleway";
-  font-style: "normal";
-  font-weight: 600;
-  font-size: 3.3rem;
-  line-height: 4rem;
-  color: #333333;
-  position: relative;
-  bottom: -45%;
-}
-.company-details__logo span:hover {
-  color: silver;
 }
 
 .company-details__social-logos {
