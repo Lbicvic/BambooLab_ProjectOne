@@ -18,3 +18,21 @@
     @include text-style($fweight: 500, $fsize: 1.5rem, $lheight: 1.75rem, $color: $black-color);
     text-align: center;
 }
+
+.glide__image{
+    width: 32.5rem;
+    height: 20.0625rem;
+}
+.glide__arrow{
+    width: 6.25rem;
+    height: 6.25rem;
+    background: $green-color;
+    border-color: $green-color;
+    border-radius: 50%;
+}
+.glide__arrow--left{
+    margin-left: 96px;
+}
+.glide__arrow--right{
+    margin-right: 96px;
+}

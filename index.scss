@@ -1,14 +1,17 @@
-@import 'sass/utilities/variables.scss';
-@import 'sass/utilities/mixins.scss';
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-@import 'sass/layout/nav.scss';
-@import 'sass/layout/header-paragraph.scss';
-@import 'sass/layout/hero-section.scss';
-@import 'sass/layout/card-section.scss';
-@import 'sass/layout/details-section.scss';
-@import 'sass/layout/newsletter-section.scss';
-@import 'sass/layout/footer.scss';
+@import "glide.core";
+@import "glide.theme";
 
-@import 'sass/components/buttons.scss';
+@import "sass/utilities/variables.scss";
+@import "sass/utilities/mixins.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import "sass/layout/nav.scss";
+@import "sass/layout/header-paragraph.scss";
+@import "sass/layout/hero-section.scss";
+@import "sass/layout/card-section.scss";
+@import "sass/layout/details-section.scss";
+@import "sass/layout/newsletter-section.scss";
+@import "sass/layout/footer.scss";
+
+@import "sass/components/buttons.scss";
