@@ -14,6 +14,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include max-media-screen($breakpoint--small){
+        display: none;
+    }
 }
 
 .nav__get-it-now-btn {
@@ -43,5 +46,58 @@ nav {
     a {
         @include text-style($fweight: 600, $fsize: 1.125rem, $lheight: 1.313rem, $color: $black-color);
         text-decoration: none;
+    }
+}
+
+.nav__hamburger-menu{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    background: $white-color;
+    span{
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        margin: 0.3125rem auto;
+        background: $black-color;
+    }
+    span:first-child{
+        margin-top: 0.5625rem;
+    }
+    span:last-child{
+        margin-bottom: 0.5625rem;
+    }
+    @include max-media-screen($breakpoint--small){
+        display: block;
+    }
+}
+.hamburger-menu{
+    display: none;
+}
+.hamburger-menu.show-hamburger-menu{
+    display: flex;
+    flex-direction: column;
+}
+nav.hidden-body,main.hidden-body,footer.hidden-body{
+    display:none;
+}
+.hamburger-menu-x{
+    align-self: flex-end;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: $white-color;
+    span{
+        width: 1.25rem;
+        height: 0.125rem;
+        margin: 0.3125rem auto;
+        background: $black-color;
+    }
+    span:first-child{
+        transform: rotate(45deg);
+    }
+    span:last-child{
+        transform: rotate(-45deg);
+        transform-origin: left bottom;
     }
 }

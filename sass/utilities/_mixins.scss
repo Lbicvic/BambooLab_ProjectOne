@@ -6,3 +6,9 @@
     line-height: $lheight;
     color: $color;
 }
+
+@mixin max-media-screen($breakpoint){
+    @media (max-width:$breakpoint) {
+        @content;
+    }
+}

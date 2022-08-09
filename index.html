@@ -10,9 +10,30 @@
 </head>
 
 <body>
+    <div class="hamburger-menu">
+        <a href="#" class="nav__hamburger-menu hamburger-menu-x">
+            <span></span>
+            <span></span>
+        </a>
+        <div class="hamburger-menu__list-button">
+            <ul class="hamburger-menu__list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu__get-it-now-btn"><a href="#">GET IT NOW</a></div>
+        </div>
+    </div>
     <nav>
         <div class="nav__wrapper">
             <img class="nav__company-logo" src="./images/nav-logo.svg" alt="PanDoo Logo">
+            <a href="#" class="nav__hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
             <div class="nav__list-button">
                 <ul class="nav__list">
                     <li><a href="#">About</a></li>
@@ -188,16 +209,23 @@
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide"><img class="glide__image" src="./images/solar-system-2939560_1920.jpg" alt="solar-panel"></li>
-                        <li class="glide__slide"><img class="glide__image" src="./images/energy-2181904_1920.jpg" alt="energy"></li>
-                        <li class="glide__slide"><img class="glide__image" src="./images/photovoltaic-system-2742302_1920.jpg" alt="photovoltaic"></li>
-                        <li class="glide__slide"><img class="glide__image" src="./images/wind-energy.jpg" alt="wind-energy"></li>
-                        <li class="glide__slide"><img class="glide__image" src="./images/pinwheel-50512_1280.jpg" alt="pinwheel"></li>
+                        <li class="glide__slide"><img class="glide__image" src="./images/solar-system-2939560_1920.jpg"
+                                alt="solar-panel"></li>
+                        <li class="glide__slide"><img class="glide__image" src="./images/energy-2181904_1920.jpg"
+                                alt="energy"></li>
+                        <li class="glide__slide"><img class="glide__image"
+                                src="./images/photovoltaic-system-2742302_1920.jpg" alt="photovoltaic"></li>
+                        <li class="glide__slide"><img class="glide__image" src="./images/wind-energy.jpg"
+                                alt="wind-energy"></li>
+                        <li class="glide__slide"><img class="glide__image" src="./images/pinwheel-50512_1280.jpg"
+                                alt="pinwheel"></li>
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./images/Arrow Left.svg" alt="arrow-left"></button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./images/Arrow Right.svg" alt="arrow-right"></button>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img
+                            src="./images/Arrow Left.svg" alt="arrow-left"></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img
+                            src="./images/Arrow Right.svg" alt="arrow-right"></button>
                 </div>
             </div>
         </section>
@@ -262,6 +290,7 @@
     </footer>
     <script src="https://unpkg.com/@glidejs/glide"></script>
     <script src="./js/glider.js"></script>
+    <script src="./js/hamburger-menu.js"></script>
 </body>
 
 </html>

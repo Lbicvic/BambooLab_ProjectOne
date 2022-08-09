@@ -161,6 +161,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 599px) {
+  .nav__list-button {
+    display: none;
+  }
+}
 
 .nav__get-it-now-btn {
   align-self: center;
@@ -198,6 +203,65 @@ nav {
   line-height: 1.313rem;
   color: #333333;
   text-decoration: none;
+}
+
+.nav__hamburger-menu {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background: #FEFEFE;
+}
+.nav__hamburger-menu span {
+  display: block;
+  width: 1.25rem;
+  height: 0.125rem;
+  margin: 0.3125rem auto;
+  background: #333333;
+}
+.nav__hamburger-menu span:first-child {
+  margin-top: 0.5625rem;
+}
+.nav__hamburger-menu span:last-child {
+  margin-bottom: 0.5625rem;
+}
+@media (max-width: 599px) {
+  .nav__hamburger-menu {
+    display: block;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-menu.show-hamburger-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.hidden-body, main.hidden-body, footer.hidden-body {
+  display: none;
+}
+
+.hamburger-menu-x {
+  align-self: flex-end;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: #FEFEFE;
+}
+.hamburger-menu-x span {
+  width: 1.25rem;
+  height: 0.125rem;
+  margin: 0.3125rem auto;
+  background: #333333;
+}
+.hamburger-menu-x span:first-child {
+  transform: rotate(45deg);
+}
+.hamburger-menu-x span:last-child {
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
 }
 
 h2 {
