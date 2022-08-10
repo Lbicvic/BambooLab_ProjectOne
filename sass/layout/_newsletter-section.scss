@@ -29,10 +29,30 @@
     background: $green-color;
     border-color: $green-color;
     border-radius: 50%;
+    @include max-media-screen($breakpoint--small) {
+        width: 3.125rem;
+        height: 3.125rem;
+        background: $white-color;
+        border-color: $white-color;
+    }
 }
 .glide__arrow--left{
-    margin-left: 96px;
+    margin-left: 6rem;
+    @include max-media-screen($breakpoint--small) {
+        margin-left: 0;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
 }
 .glide__arrow--right{
-    margin-right: 96px;
+    margin-right: 6rem;
+    @include max-media-screen($breakpoint--small) {
+        margin-right: 0;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
 }

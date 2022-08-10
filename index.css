@@ -666,13 +666,39 @@ p {
   border-color: #87DE87;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  .glide__arrow {
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #FEFEFE;
+    border-color: #FEFEFE;
+  }
+}
 
 .glide__arrow--left {
-  margin-left: 96px;
+  margin-left: 6rem;
+}
+@media (max-width: 600px) {
+  .glide__arrow--left {
+    margin-left: 0;
+  }
+  .glide__arrow--left img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .glide__arrow--right {
-  margin-right: 96px;
+  margin-right: 6rem;
+}
+@media (max-width: 600px) {
+  .glide__arrow--right {
+    margin-right: 0;
+  }
+  .glide__arrow--right img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .company-details {
