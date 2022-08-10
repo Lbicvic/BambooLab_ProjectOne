@@ -7,7 +7,7 @@
         color: $white-color;
     }
     @include max-media-screen($breakpoint--small){
-        min-height: 170.125rem;
+       min-height: fit-content;
     }
 }
 
@@ -36,6 +36,7 @@
     @include max-media-screen($breakpoint--small){
         flex-direction: column;
         width: auto;
+        height: fit-content;
         margin: 0;
      }
 }
@@ -46,6 +47,10 @@
     h3 {
         @include text-style($fweight: 600, $fsize: 2.25rem, $lheight: 2.625rem);
         margin: 0 0 0.75rem 0;
+        @include max-media-screen($breakpoint--small){
+            text-align: center;
+            margin-bottom: 1.6875rem;
+         }
     }
 
     p {
@@ -59,6 +64,9 @@
 .details-wrapper__solar-generator {
     display: flex;
     justify-content: center;
+    @include max-media-screen($breakpoint--small){
+        flex-direction: column;
+     }
 }
 
 .details-wrapper__solar-image-wrapper {
@@ -67,6 +75,12 @@
     display: flex;
     flex-direction: row-reverse;
     margin-right: 8.5rem;
+    @include max-media-screen($breakpoint--small){
+        flex-direction: column;
+        width: auto;
+        height: fit-content;
+        margin: 0;
+     }
 }
 
 .details-wrapper__subsection-solar-generator {
@@ -74,9 +88,16 @@
     h3 {
         @include text-style($fweight: 600, $fsize: 2.25rem, $lheight: 2.625rem);
         margin: 0 0 0.75rem 0;
+        @include max-media-screen($breakpoint--small){
+            text-align: center;
+            margin-bottom: 1.6875rem;
+         }
     }
 
     p {
         margin: 0.75rem 0 0.75rem 0;
     }
+    @include max-media-screen($breakpoint--small){
+        margin: 1.5625rem 2rem;
+     }
 }

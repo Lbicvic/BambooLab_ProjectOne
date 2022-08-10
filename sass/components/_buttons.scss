@@ -10,6 +10,9 @@
     text-align: center;
     text-transform: uppercase;
     align-self: center;
+    @include max-media-screen($breakpoint--small){
+        display: none;
+     }
 }
 
 .newsletters-section__input-button {

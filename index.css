@@ -503,7 +503,9 @@ p {
 }
 @media (max-width: 600px) {
   .details-section {
-    min-height: 170.125rem;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
 }
 
@@ -538,6 +540,9 @@ p {
   .details-wrapper__wind-image-wrapper {
     flex-direction: column;
     width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     margin: 0;
   }
 }
@@ -554,6 +559,12 @@ p {
   color: #FEFEFE;
   margin: 0 0 0.75rem 0;
 }
+@media (max-width: 600px) {
+  .details-wrapper__subsection-wind-generator h3 {
+    text-align: center;
+    margin-bottom: 1.6875rem;
+  }
+}
 .details-wrapper__subsection-wind-generator p {
   margin: 0.75rem 0 0.75rem 0;
 }
@@ -567,6 +578,11 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 600px) {
+  .details-wrapper__solar-generator {
+    flex-direction: column;
+  }
+}
 
 .details-wrapper__solar-image-wrapper {
   width: 43.5rem;
@@ -574,6 +590,16 @@ p {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 8.5rem;
+}
+@media (max-width: 600px) {
+  .details-wrapper__solar-image-wrapper {
+    flex-direction: column;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+  }
 }
 
 .details-wrapper__subsection-solar-generator {
@@ -588,8 +614,19 @@ p {
   color: #FEFEFE;
   margin: 0 0 0.75rem 0;
 }
+@media (max-width: 600px) {
+  .details-wrapper__subsection-solar-generator h3 {
+    text-align: center;
+    margin-bottom: 1.6875rem;
+  }
+}
 .details-wrapper__subsection-solar-generator p {
   margin: 0.75rem 0 0.75rem 0;
+}
+@media (max-width: 600px) {
+  .details-wrapper__subsection-solar-generator {
+    margin: 1.5625rem 2rem;
+  }
 }
 
 .newsletters-section {
@@ -723,6 +760,11 @@ p {
   text-align: center;
   text-transform: uppercase;
   align-self: center;
+}
+@media (max-width: 600px) {
+  .details-wrapper__button {
+    display: none;
+  }
 }
 
 .newsletters-section__input-button {
