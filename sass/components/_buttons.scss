@@ -35,6 +35,9 @@
         margin-left: 1.25rem;
         border: none;
         text-align: center;
+        @include max-media-screen($breakpoint--small){
+            width: 13.125rem;
+        }
     }
 
     input::placeholder {
@@ -51,5 +54,15 @@
         border-radius: 0.75rem;
         text-align: center;
         text-transform: uppercase;
+        @include max-media-screen($breakpoint--small){
+            border-radius: 0rem 0.75rem 0.75rem 0rem;
+            margin: 0;
+            @include text-style($fweight: 700, $fsize: 1.125rem, $lheight: 1.3125rem, $color: $black-color);
+         }
+    }
+    @include max-media-screen($breakpoint--small){
+        width: 20rem;
+        margin-top: 1.875rem;
+        margin-bottom: 0.875rem;
     }
 }

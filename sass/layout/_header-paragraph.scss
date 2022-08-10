@@ -1,6 +1,9 @@
 h2 {
     @include text-style($fweight: 700, $fsize: 3rem, $lheight: 3.5rem, $color: $black-color);
     text-align: center;
+    @include max-media-screen($breakpoint--small){
+        @include text-style($fweight: 700, $fsize: 2.25rem, $lheight: 2.625rem, $color: $black-color);
+    }
 }
 
 p {

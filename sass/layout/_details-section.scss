@@ -50,6 +50,7 @@
         @include max-media-screen($breakpoint--small){
             text-align: center;
             margin-bottom: 1.6875rem;
+            @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem);
          }
     }
 
@@ -91,6 +92,7 @@
         @include max-media-screen($breakpoint--small){
             text-align: center;
             margin-bottom: 1.6875rem;
+            @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem);
          }
     }
 

@@ -8,15 +8,29 @@
     h2 {
         margin-bottom: 0;
     }
+    @include max-media-screen($breakpoint--small){
+        margin-top:0.5rem;
+        margin-bottom: 3rem;
+        h2{
+            @include text-style($fweight: 700,$fsize: 2.25rem, $lheight: 2.625rem, $color: $black-color);
+            margin-bottom: 0.75rem;
+        }
+    }
 }
 
 .newsletters-section__p-container {
     max-width: 52.5rem;
+    @include max-media-screen($breakpoint--small){
+        max-width: 19.5rem;
+    }
 }
 
 .newsletters-section__paragraph {
     @include text-style($fweight: 500, $fsize: 1.5rem, $lheight: 1.75rem, $color: $black-color);
     text-align: center;
+    @include max-media-screen($breakpoint--small){
+        @include text-style($fweight: 500, $fsize: 1rem, $lheight: 1.1875rem, $color: $black-color);
+    }
 }
 
 .glide__image{

@@ -278,6 +278,16 @@ h2 {
   color: #333333;
   text-align: center;
 }
+@media (max-width: 600px) {
+  h2 {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    color: #333333;
+  }
+}
 
 p {
   font-family: "Raleway";
@@ -563,6 +573,12 @@ p {
   .details-wrapper__subsection-wind-generator h3 {
     text-align: center;
     margin-bottom: 1.6875rem;
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #FEFEFE;
   }
 }
 .details-wrapper__subsection-wind-generator p {
@@ -618,6 +634,12 @@ p {
   .details-wrapper__subsection-solar-generator h3 {
     text-align: center;
     margin-bottom: 1.6875rem;
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #FEFEFE;
   }
 }
 .details-wrapper__subsection-solar-generator p {
@@ -639,9 +661,29 @@ p {
 .newsletters-section h2 {
   margin-bottom: 0;
 }
+@media (max-width: 600px) {
+  .newsletters-section {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .newsletters-section h2 {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    color: #333333;
+    margin-bottom: 0.75rem;
+  }
+}
 
 .newsletters-section__p-container {
   max-width: 52.5rem;
+}
+@media (max-width: 600px) {
+  .newsletters-section__p-container {
+    max-width: 19.5rem;
+  }
 }
 
 .newsletters-section__paragraph {
@@ -652,6 +694,16 @@ p {
   line-height: 1.75rem;
   color: #333333;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .newsletters-section__paragraph {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #333333;
+  }
 }
 
 .glide__image {
@@ -707,11 +759,28 @@ p {
   flex-direction: column;
   background: #87DE87;
 }
+@media (max-width: 600px) {
+  .company-details {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    align-items: center;
+  }
+}
 
 .company-details__container {
   display: flex;
   margin: 0 15.75rem 6rem 6.75rem;
   justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .company-details__container {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
 }
 
 .company-details__adress p,
@@ -719,6 +788,14 @@ p {
 .company-details__products p,
 .company-details__social-media p {
   color: #333333;
+}
+@media (max-width: 600px) {
+  .company-details__adress p,
+.company-details__about p,
+.company-details__products p,
+.company-details__social-media p {
+    text-align: center;
+  }
 }
 .company-details__adress p:first-child,
 .company-details__about p:first-child,
@@ -736,6 +813,11 @@ p {
 
 .company-details__logo {
   margin: 3rem 0 1.875rem 6.75rem;
+}
+@media (max-width: 600px) {
+  .company-details__logo {
+    margin: 0;
+  }
 }
 
 .company-details__social-logos {
@@ -758,11 +840,23 @@ p {
 .copyright__details p {
   color: #FEFEFE;
 }
+@media (max-width: 600px) {
+  .copyright__details {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .copyright__privacy {
   width: 9.375rem;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .copyright__privacy {
+    justify-content: space-evenly;
+  }
 }
 
 .copyright {
@@ -813,6 +907,11 @@ p {
   border: none;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .newsletters-section__input-button input {
+    width: 13.125rem;
+  }
+}
 .newsletters-section__input-button input::-moz-placeholder {
   text-align: left;
 }
@@ -837,4 +936,23 @@ p {
   border-radius: 0.75rem;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .newsletters-section__input-button button {
+    border-radius: 0rem 0.75rem 0.75rem 0rem;
+    margin: 0;
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: #333333;
+  }
+}
+@media (max-width: 600px) {
+  .newsletters-section__input-button {
+    width: 20rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
 }/*# sourceMappingURL=index.css.map */
