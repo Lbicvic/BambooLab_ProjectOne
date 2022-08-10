@@ -155,13 +155,18 @@ nav {
   margin: 0 6.75rem 0 6.75rem;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .nav__wrapper {
+    margin: 0 2rem 0 2rem;
+  }
+}
 
 .nav__list-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .nav__list-button {
     display: none;
   }
@@ -224,7 +229,7 @@ nav {
 .nav__hamburger-menu span:last-child {
   margin-bottom: 0.5625rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .nav__hamburger-menu {
     display: block;
   }
@@ -293,10 +298,22 @@ p {
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+@media (max-width: 600px) {
+  .hero {
+    align-items: flex-end;
+    min-height: 23.75rem;
+  }
+}
 
 .hero__hero-wrapper {
   display: flex;
   margin-left: 10%;
+}
+@media (max-width: 600px) {
+  .hero__hero-wrapper {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
 }
 
 .hero__description {
@@ -304,15 +321,38 @@ p {
   width: 37.1875rem;
   height: 14.25rem;
 }
+@media (max-width: 600px) {
+  .hero__description {
+    width: auto;
+  }
+}
 
 .hero__content {
   margin: 2rem 1.1875rem 2rem 1.5rem;
+}
+@media (max-width: 600px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+  .hero__content p {
+    margin: 16px 0 0 0;
+  }
 }
 
 .greenDiv {
   background: #87DE87;
   min-height: 100%;
   width: 2rem;
+}
+@media (max-width: 600px) {
+  .greenDiv {
+    min-width: 100%;
+    min-height: 2rem;
+  }
 }
 
 .hero__title {
@@ -325,11 +365,28 @@ p {
   margin-bottom: 1.5rem;
   margin-top: 2rem;
 }
+@media (max-width: 600px) {
+  .hero__title {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    color: #FEFEFE;
+    margin: 0 0 1rem 0;
+  }
+}
 
 .card-section {
   height: 40.625rem;
   width: 100%;
   margin-top: 5rem;
+}
+@media (max-width: 600px) {
+  .card-section {
+    margin-top: 3rem;
+    min-height: 109.375rem;
+  }
 }
 
 .card-details {
@@ -344,14 +401,36 @@ p {
   width: 106.5rem;
   margin: 2.875rem 6.75rem 0 6.75rem;
 }
+@media (max-width: 600px) {
+  .card-wrapper {
+    flex-direction: column;
+    width: auto;
+    margin: 2rem 2rem;
+    gap: 5.625rem;
+  }
+}
 
 .card-wrapper__card {
   margin: 2rem 2.125rem 2rem 2rem;
+}
+@media (max-width: 600px) {
+  .card-wrapper__card {
+    width: auto;
+    margin: 0 1rem;
+  }
 }
 
 .card-wrapper__content {
   display: flex;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .card-wrapper__content {
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    bottom: 3.75rem;
+  }
 }
 
 .card-wrapper__card-title p:first-child {
@@ -372,11 +451,25 @@ p {
   color: #FEFEFE;
   margin-top: 0.625rem;
 }
+@media (max-width: 600px) {
+  .card-wrapper__card-title {
+    text-align: center;
+    margin-bottom: -3.75rem;
+  }
+}
 
 .card-wrapper__theme {
   background: #333333;
   width: 34.5rem;
   height: 21.75rem;
+}
+@media (max-width: 600px) {
+  .card-wrapper__theme {
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 .card-wrapper__image {
@@ -394,6 +487,11 @@ p {
   border-radius: 50%;
   margin-right: 1.5rem;
 }
+@media (max-width: 600px) {
+  .card-wrapper__circle-image {
+    margin-right: 0;
+  }
+}
 
 .details-section {
   display: flex;
@@ -403,9 +501,19 @@ p {
 .details-section h2 {
   color: #FEFEFE;
 }
+@media (max-width: 600px) {
+  .details-section {
+    min-height: 170.125rem;
+  }
+}
 
 .details-generators {
   margin: 4.8125rem 6.75rem 0 6.75rem;
+}
+@media (max-width: 600px) {
+  .details-generators {
+    margin: 0;
+  }
 }
 
 .details-wrapper__wind-generator {
@@ -413,12 +521,25 @@ p {
   justify-content: center;
   margin-bottom: 8rem;
 }
+@media (max-width: 600px) {
+  .details-wrapper__wind-generator {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+}
 
 .details-wrapper__wind-image-wrapper {
   width: 43.5rem;
   height: 30rem;
   display: flex;
   margin-left: 8.5rem;
+}
+@media (max-width: 600px) {
+  .details-wrapper__wind-image-wrapper {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+  }
 }
 
 .details-wrapper__subsection-wind-generator {
@@ -435,6 +556,11 @@ p {
 }
 .details-wrapper__subsection-wind-generator p {
   margin: 0.75rem 0 0.75rem 0;
+}
+@media (max-width: 600px) {
+  .details-wrapper__subsection-wind-generator {
+    margin: 1.5625rem 2rem;
+  }
 }
 
 .details-wrapper__solar-generator {

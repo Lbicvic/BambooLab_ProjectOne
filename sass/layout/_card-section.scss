@@ -2,6 +2,10 @@
     height: 40.625rem;
     width: 100%;
     margin-top: 5rem;
+    @include max-media-screen($breakpoint--small) {
+        margin-top: 3rem;
+        min-height: 109.375rem;
+    }
 }
 
 .card-details {
@@ -15,15 +19,31 @@
     justify-content: space-between;
     width: calc(34.5rem + 34.5rem + 37.5rem);
     margin: 2.875rem 6.75rem 0 6.75rem;
+    @include max-media-screen($breakpoint--small) {
+        flex-direction: column;
+        width: auto;
+        margin: 2rem 2rem;
+        gap: 5.625rem;
+    }
 }
 
 .card-wrapper__card {
     margin: 2rem 2.125rem 2rem 2rem;
+    @include max-media-screen($breakpoint--small) {
+        width: auto;
+        margin: 0 1rem;
+    }
 }
 
 .card-wrapper__content {
     display: flex;
     align-items: center;
+    @include max-media-screen($breakpoint--small) {
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+        bottom: 3.75rem;
+    }
 }
 
 .card-wrapper__card-title {
@@ -36,12 +56,20 @@
         @include text-style($fstyle: italic, $fweight: 400, $fsize: 1.5rem, $lheight: 1.75rem);
         margin-top: 0.625rem;
     }
+    @include max-media-screen($breakpoint--small) {
+        text-align: center;
+        margin-bottom: -3.75rem;
+    }
 }
 
 .card-wrapper__theme {
     background: $black-color;
     width: 34.5rem;
     height: 21.75rem;
+    @include max-media-screen($breakpoint--small) {
+        width: auto;
+        height: fit-content;
+    }
 }
 
 .card-wrapper__image {
@@ -58,4 +86,7 @@
     align-items: center;
     border-radius: 50%;
     margin-right: 1.5rem;
+    @include max-media-screen($breakpoint--small) {
+        margin-right: 0;
+    }
 }

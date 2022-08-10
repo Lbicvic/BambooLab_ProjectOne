@@ -7,31 +7,60 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    @include max-media-screen($breakpoint--small) {
+        align-items: flex-end;
+        min-height: calc(40rem - 16.25rem);
+    }
 }
 
 .hero__hero-wrapper {
     display: flex;
     margin-left: 10%;
+    @include max-media-screen($breakpoint--small) {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
 }
 
 .hero__description {
     background: $black-color;
     width: 37.1875rem;
     height: 14.25rem;
+    @include max-media-screen($breakpoint--small) {
+        width: auto;
+    }
 }
 
 .hero__content {
     margin: 2rem 1.1875rem 2rem 1.5rem;
+    @include max-media-screen($breakpoint--small) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 2rem 2rem 2rem;
+        p {
+            margin: 16px 0 0 0;
+        }
+    }
 }
 
 .greenDiv {
     background: $green-color;
     min-height: 100%;
     width: 2rem;
+    @include max-media-screen($breakpoint--small) {
+        min-width: 100%;
+        min-height: 2rem;
+    }
 }
 
 .hero__title {
     @include text-style($fweight: 600, $fsize: 3rem, $lheight: 3.5rem);
     margin-bottom: 1.5rem;
     margin-top: 2rem;
+    @include max-media-screen($breakpoint--small) {
+        @include text-style($fweight: 600, $fsize: 2.25rem, $lheight: 2.625rem);
+        margin: 0 0 1rem 0;
+    }
 }

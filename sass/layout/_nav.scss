@@ -8,6 +8,9 @@ nav {
     justify-content: space-between;
     margin: 0 6.75rem 0 6.75rem;
     align-items: center;
+    @include max-media-screen($breakpoint--small){
+       margin: 0 2rem 0 2rem ;
+    }
 }
 
 .nav__list-button {

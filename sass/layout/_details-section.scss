@@ -6,16 +6,26 @@
     h2 {
         color: $white-color;
     }
+    @include max-media-screen($breakpoint--small){
+        min-height: 170.125rem;
+    }
 }
 
 .details-generators {
     margin: 4.8125rem 6.75rem 0 6.75rem;
+    @include max-media-screen($breakpoint--small){
+       margin: 0;
+    }
 }
 
 .details-wrapper__wind-generator {
     display: flex;
     justify-content: center;
     margin-bottom: 8rem;
+    @include max-media-screen($breakpoint--small){
+        flex-direction: column-reverse;
+        margin: 0;
+     }
 }
 
 .details-wrapper__wind-image-wrapper {
@@ -23,6 +33,11 @@
     height: 30rem;
     display: flex;
     margin-left: 8.5rem;
+    @include max-media-screen($breakpoint--small){
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+     }
 }
 
 .details-wrapper__subsection-wind-generator {
@@ -36,6 +51,9 @@
     p {
         margin: 0.75rem 0 0.75rem 0;
     }
+    @include max-media-screen($breakpoint--small){
+        margin: 1.5625rem 2rem;
+     }
 }
 
 .details-wrapper__solar-generator {
