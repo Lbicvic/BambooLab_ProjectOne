@@ -12,3 +12,8 @@
         @content;
     }
 }
+@mixin min-max-media-screen($min-breakpoint,$max-breakpoint){
+    @media (min-width:$min-breakpoint) and (max-width:$max-breakpoint){
+        @content;
+    }
+}

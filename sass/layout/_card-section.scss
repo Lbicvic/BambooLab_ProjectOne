@@ -1,10 +1,9 @@
 .card-section {
-    height: 40.625rem;
+    min-height: 40.625rem;
     width: 100%;
     margin-top: 5rem;
     @include max-media-screen($breakpoint--small) {
         margin-top: 3rem;
-        min-height: 109.375rem;
     }
 }
 
@@ -12,17 +11,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    @include max-media-screen($breakpoint--small) {
+        min-height: 112.5rem;
+    }
 }
 
 .card-wrapper {
     display: flex;
     justify-content: space-between;
-    width: calc(34.5rem + 34.5rem + 37.5rem);
+    width: auto;
+    gap: 24px;
     margin: 2.875rem 6.75rem 0 6.75rem;
     @include max-media-screen($breakpoint--small) {
         flex-direction: column;
         width: auto;
-        margin: 2rem 2rem;
+        margin: 4.5rem 2rem;
         gap: 5.625rem;
     }
 }

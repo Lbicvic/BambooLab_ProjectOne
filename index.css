@@ -242,9 +242,12 @@ nav {
 .hamburger-menu.show-hamburger-menu {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
-nav.hidden-body, main.hidden-body, footer.hidden-body {
+nav.hidden-body,
+main.hidden-body,
+footer.hidden-body {
   display: none;
 }
 
@@ -254,6 +257,8 @@ nav.hidden-body, main.hidden-body, footer.hidden-body {
   width: 2rem;
   height: 2rem;
   background: #FEFEFE;
+  margin-top: 1rem;
+  margin-right: 1.9375rem;
 }
 .hamburger-menu-x span {
   width: 1.25rem;
@@ -267,6 +272,50 @@ nav.hidden-body, main.hidden-body, footer.hidden-body {
 .hamburger-menu-x span:last-child {
   transform: rotate(-45deg);
   transform-origin: left bottom;
+}
+
+.hamburger-menu__list-button {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.hamburger-menu__get-it-now-btn {
+  background: #87DE87;
+  width: 10rem;
+  height: 3.5rem;
+  margin-left: 2rem;
+}
+.hamburger-menu__get-it-now-btn a {
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 3.5rem;
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 1.5625rem;
+}
+
+.hamburger-menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: space-between;
+}
+
+.hamburger-menu__list > li a {
+  font-family: "Raleway";
+  font-style: "normal";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #333333;
+  text-decoration: none;
 }
 
 h2 {
@@ -312,6 +361,9 @@ p {
   .hero {
     align-items: flex-end;
     min-height: 23.75rem;
+    background: url(./images/wind-power.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
   }
 }
 
@@ -351,6 +403,14 @@ p {
   .hero__content p {
     margin: 16px 0 0 0;
   }
+  .hero__content p:last-child {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #FEFEFE;
+  }
 }
 
 .greenDiv {
@@ -388,14 +448,13 @@ p {
 }
 
 .card-section {
-  height: 40.625rem;
+  min-height: 40.625rem;
   width: 100%;
   margin-top: 5rem;
 }
 @media (max-width: 600px) {
   .card-section {
     margin-top: 3rem;
-    min-height: 109.375rem;
   }
 }
 
@@ -403,19 +462,26 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .card-details {
+    min-height: 112.5rem;
+  }
 }
 
 .card-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 106.5rem;
+  width: auto;
+  gap: 24px;
   margin: 2.875rem 6.75rem 0 6.75rem;
 }
 @media (max-width: 600px) {
   .card-wrapper {
     flex-direction: column;
     width: auto;
-    margin: 2rem 2rem;
+    margin: 4.5rem 2rem;
     gap: 5.625rem;
   }
 }
@@ -710,6 +776,11 @@ p {
   width: 32.5rem;
   height: 20.0625rem;
 }
+@media (max-width: 600px) {
+  .glide__image {
+    width: 100%;
+  }
+}
 
 .glide__arrow {
   width: 6.25rem;
@@ -809,6 +880,11 @@ p {
 .company-details__social-media a {
   text-decoration: none;
   color: #333333;
+}
+
+.company-details__adress p:first-child {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
 .company-details__logo {

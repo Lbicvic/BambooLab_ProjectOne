@@ -8,8 +8,8 @@ nav {
     justify-content: space-between;
     margin: 0 6.75rem 0 6.75rem;
     align-items: center;
-    @include max-media-screen($breakpoint--small){
-       margin: 0 2rem 0 2rem ;
+    @include max-media-screen($breakpoint--small) {
+        margin: 0 2rem 0 2rem;
     }
 }
 
@@ -17,7 +17,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         display: none;
     }
 }
@@ -52,55 +52,92 @@ nav {
     }
 }
 
-.nav__hamburger-menu{
+.nav__hamburger-menu {
     display: none;
     width: 2rem;
     height: 2rem;
     background: $white-color;
-    span{
+    span {
         display: block;
         width: 1.25rem;
         height: 0.125rem;
         margin: 0.3125rem auto;
         background: $black-color;
     }
-    span:first-child{
+    span:first-child {
         margin-top: 0.5625rem;
     }
-    span:last-child{
+    span:last-child {
         margin-bottom: 0.5625rem;
     }
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         display: block;
     }
 }
-.hamburger-menu{
+.hamburger-menu {
     display: none;
 }
-.hamburger-menu.show-hamburger-menu{
+.hamburger-menu.show-hamburger-menu {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
-nav.hidden-body,main.hidden-body,footer.hidden-body{
-    display:none;
+nav.hidden-body,
+main.hidden-body,
+footer.hidden-body {
+    display: none;
 }
-.hamburger-menu-x{
+.hamburger-menu-x {
     align-self: flex-end;
     display: inline-block;
     width: 2rem;
     height: 2rem;
     background: $white-color;
-    span{
+    margin-top: 1rem;
+    margin-right: 1.9375rem;
+    span {
         width: 1.25rem;
         height: 0.125rem;
         margin: 0.3125rem auto;
         background: $black-color;
     }
-    span:first-child{
+    span:first-child {
         transform: rotate(45deg);
     }
-    span:last-child{
+    span:last-child {
         transform: rotate(-45deg);
         transform-origin: left bottom;
+    }
+}
+.hamburger-menu__list-button {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.hamburger-menu__get-it-now-btn {
+    background: $green-color;
+    width: 10rem;
+    height: 3.5rem;
+    margin-left: 2rem;
+    a {
+        @include text-style($fweight: 700, $fsize: 1.125rem, $lheight: 3.5rem, $color: $black-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 1.5625rem;
+    }
+}
+.hamburger-menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+.hamburger-menu__list > li {
+    a {
+        @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem, $color: $black-color);
+        text-decoration: none;
     }
 }

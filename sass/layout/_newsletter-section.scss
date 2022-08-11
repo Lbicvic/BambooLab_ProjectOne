@@ -36,6 +36,9 @@
 .glide__image{
     width: 32.5rem;
     height: 20.0625rem;
+    @include max-media-screen($breakpoint--small){
+       width: 100%;
+    }
 }
 .glide__arrow{
     width: 6.25rem;
