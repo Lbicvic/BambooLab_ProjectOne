@@ -24,7 +24,7 @@
         margin: 0;
     }
     @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
-       margin: 0 3.125rem;
+        margin: 0 3.125rem;
     }
 }
 
@@ -51,7 +51,7 @@
         p {
             margin: 16px 0 0 0;
         }
-        p:last-child{
+        p:last-child {
             @include text-style($fweight: 400, $fsize: 1rem, $lheight: 1.1875rem);
         }
     }

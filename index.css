@@ -144,6 +144,10 @@
   cursor: -webkit-grabbing;
 }
 
+body {
+  margin: 0;
+}
+
 nav {
   background: #87DE87;
 }
@@ -251,6 +255,8 @@ nav {
 .hamburger-menu.show-hamburger-menu {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  margin-left: 2rem;
 }
 
 nav.hidden-body,
@@ -283,18 +289,17 @@ footer.hidden-body {
 }
 
 .hamburger-menu__list-button {
-  height: 34.375rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
 }
 
 .hamburger-menu__get-it-now-btn {
   background: #87DE87;
   width: 10rem;
   height: 3.5rem;
-  margin-left: 2rem;
 }
 .hamburger-menu__get-it-now-btn a {
   font-family: "Raleway";
@@ -314,6 +319,7 @@ footer.hidden-body {
   flex-direction: column;
   row-gap: 2rem;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 .hamburger-menu__list > li a {
