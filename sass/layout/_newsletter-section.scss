@@ -50,6 +50,9 @@
     @include max-media-screen($breakpoint--small){
        width: 100%;
     }
+    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        width: 100%;
+    }
 }
 .glide__arrow{
     width: 6.25rem;
@@ -63,6 +66,10 @@
         background: $white-color;
         border-color: $white-color;
     }
+    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        width: 4.375rem;
+        height: 4.375rem;
+    }
 }
 .glide__arrow--left{
     margin-left: 6rem;
@@ -73,6 +80,13 @@
             height: 2rem;
         }
     }
+    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        margin-left: 0;
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
 }
 .glide__arrow--right{
     margin-right: 6rem;
@@ -81,6 +95,13 @@
         img{
             width: 2rem;
             height: 2rem;
+        }
+    }
+    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        margin-right: 0;
+        img{
+            width: 3rem;
+            height: 3rem;
         }
     }
 }

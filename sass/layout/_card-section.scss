@@ -29,6 +29,11 @@
         margin: 4.5rem 2rem;
         gap: 5.625rem;
     }
+    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 4rem;
+    }
 }
 
 .card-wrapper__card {

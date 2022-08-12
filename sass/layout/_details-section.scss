@@ -6,15 +6,18 @@
     h2 {
         color: $white-color;
     }
-    @include max-media-screen($breakpoint--small){
-       min-height: fit-content;
+    @include max-media-screen($breakpoint--small) {
+        min-height: fit-content;
     }
 }
 
 .details-generators {
     margin: 4.8125rem 6.75rem 0 6.75rem;
-    @include max-media-screen($breakpoint--small){
-       margin: 0;
+    @include max-media-screen($breakpoint--small) {
+        margin: 0;
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        margin: 0 3.125rem;
     }
 }
 
@@ -22,52 +25,77 @@
     display: flex;
     justify-content: center;
     margin-bottom: 8rem;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         flex-direction: column-reverse;
         margin: 0;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        flex-direction: column-reverse;
+        width: auto;
+        margin-bottom: 3rem;
+    }
 }
 
 .details-wrapper__wind-image-wrapper {
-    width: 43.5rem;
-    height: 30rem;
+    max-width: 43.5rem;
+    max-height: 30rem;
     display: flex;
     margin-left: 8.5rem;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         flex-direction: column;
         width: auto;
         height: fit-content;
         margin: 0;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        margin: 0 auto;
+        width: auto;
+    }
 }
-
+.details-wrapper__wind-image, .details-wrapper__solar-image {
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        height: 100%;
+        width: 95%;
+    }
+}
 .details-wrapper__subsection-wind-generator {
     margin-left: calc(13.4375rem - 6.75rem);
 
     h3 {
         @include text-style($fweight: 600, $fsize: 2.25rem, $lheight: 2.625rem);
         margin: 0 0 0.75rem 0;
-        @include max-media-screen($breakpoint--small){
+        @include max-media-screen($breakpoint--small) {
             text-align: center;
             margin-bottom: 1.6875rem;
             @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem);
-         }
+        }
+        @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+            text-align: center;
+        }
     }
 
     p {
         margin: 0.75rem 0 0.75rem 0;
     }
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         margin: 1.5625rem 2rem;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        margin-top: 1.25rem;
+        margin-left: 0;
+    }
 }
 
 .details-wrapper__solar-generator {
     display: flex;
     justify-content: center;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         flex-direction: column;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .details-wrapper__solar-image-wrapper {
@@ -76,12 +104,16 @@
     display: flex;
     flex-direction: row-reverse;
     margin-right: 8.5rem;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         flex-direction: column;
         width: auto;
         height: fit-content;
         margin: 0;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        width: auto;
+        margin: 0 auto;
+    }
 }
 
 .details-wrapper__subsection-solar-generator {
@@ -89,17 +121,24 @@
     h3 {
         @include text-style($fweight: 600, $fsize: 2.25rem, $lheight: 2.625rem);
         margin: 0 0 0.75rem 0;
-        @include max-media-screen($breakpoint--small){
+        @include max-media-screen($breakpoint--small) {
             text-align: center;
             margin-bottom: 1.6875rem;
             @include text-style($fweight: 600, $fsize: 1.5rem, $lheight: 1.75rem);
-         }
+        }
+        @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+            text-align: center;
+        }
     }
 
     p {
         margin: 0.75rem 0 0.75rem 0;
     }
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         margin: 1.5625rem 2rem;
-     }
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        margin-top: 1.25rem;
+        margin-right: 0;
+    }
 }

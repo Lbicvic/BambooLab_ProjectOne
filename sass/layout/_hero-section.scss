@@ -23,6 +23,9 @@
         flex-direction: column-reverse;
         margin: 0;
     }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+       margin: 0 3.125rem;
+    }
 }
 
 .hero__description {
@@ -30,6 +33,9 @@
     width: 37.1875rem;
     height: 14.25rem;
     @include max-media-screen($breakpoint--small) {
+        width: auto;
+    }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         width: auto;
     }
 }

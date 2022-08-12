@@ -15,6 +15,9 @@ nav {
           height: 100%;
         }
     }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+        flex-direction: column;
+    }
 }
 
 .nav__list-button {

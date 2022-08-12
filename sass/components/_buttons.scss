@@ -38,6 +38,9 @@
         @include max-media-screen($breakpoint--small){
             width: 13.125rem;
         }
+        @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+            width: 80%;
+        }
     }
 
     input::placeholder {
@@ -65,4 +68,7 @@
         margin-top: 1.875rem;
         margin-bottom: 0.875rem;
     }
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
+       width: 50%;
+     }
 }
