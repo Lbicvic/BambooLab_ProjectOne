@@ -13,7 +13,7 @@
     align-items: center;
     width: auto;
     @include max-media-screen($breakpoint--small) {
-        min-height: 112.5rem;
+        min-height: 100%;
     }
 }
 
@@ -30,6 +30,11 @@
         gap: 5.625rem;
     }
     @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 4rem;
+    }
+    @include min-max-media-screen($breakpoint--medium + 1,$breakpoint--large){
         flex-direction: column;
         width: auto;
         margin-bottom: 4rem;
@@ -78,6 +83,10 @@
     @include max-media-screen($breakpoint--small) {
         width: auto;
         height: fit-content;
+    }
+    @include min-max-media-screen($breakpoint--large + 1, $breakpoint--extra-large) {
+        height: 100%;
+        width: 80%;
     }
 }
 

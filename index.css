@@ -485,7 +485,7 @@ p {
 }
 @media (max-width: 600px) {
   .card-details {
-    min-height: 112.5rem;
+    min-height: 100%;
   }
 }
 
@@ -505,6 +505,13 @@ p {
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
+  .card-wrapper {
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
   .card-wrapper {
     flex-direction: column;
     width: auto;
@@ -573,6 +580,12 @@ p {
     height: fit-content;
   }
 }
+@media (min-width: 1441px) and (max-width: 1780px) {
+  .card-wrapper__theme {
+    height: 100%;
+    width: 80%;
+  }
+}
 
 .card-wrapper__image {
   width: 5rem;
@@ -624,6 +637,11 @@ p {
     margin: 0 3.125rem;
   }
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-generators {
+    margin: 0 20px;
+  }
+}
 
 .details-wrapper__wind-generator {
   display: flex;
@@ -666,9 +684,29 @@ p {
     width: auto;
   }
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__wind-image-wrapper {
+    margin-left: 2.25rem;
+  }
+}
 
 @media (min-width: 601px) and (max-width: 1024px) {
-  .details-wrapper__wind-image, .details-wrapper__solar-image {
+  .details-wrapper__wind-image,
+.details-wrapper__solar-image {
+    height: 100%;
+    width: 95%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__wind-image,
+.details-wrapper__solar-image {
+    height: 100%;
+    width: 95%;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1780px) {
+  .details-wrapper__wind-image,
+.details-wrapper__solar-image {
     height: 100%;
     width: 95%;
   }
@@ -706,6 +744,16 @@ p {
 .details-wrapper__subsection-wind-generator p {
   margin: 0.75rem 0 0.75rem 0;
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__subsection-wind-generator p {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #FEFEFE;
+  }
+}
 @media (max-width: 600px) {
   .details-wrapper__subsection-wind-generator {
     margin: 1.5625rem 2rem;
@@ -715,6 +763,19 @@ p {
   .details-wrapper__subsection-wind-generator {
     margin-top: 1.25rem;
     margin-left: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__subsection-wind-generator {
+    height: 100%;
+    width: 80%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1780px) {
+  .details-wrapper__subsection-wind-generator {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -757,6 +818,11 @@ p {
     margin: 0 auto;
   }
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__solar-image-wrapper {
+    margin-right: 2.25rem;
+  }
+}
 
 .details-wrapper__subsection-solar-generator {
   margin-right: 6.6875rem;
@@ -790,6 +856,16 @@ p {
 .details-wrapper__subsection-solar-generator p {
   margin: 0.75rem 0 0.75rem 0;
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__subsection-solar-generator p {
+    font-family: "Raleway";
+    font-style: "normal";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #FEFEFE;
+  }
+}
 @media (max-width: 600px) {
   .details-wrapper__subsection-solar-generator {
     margin: 1.5625rem 2rem;
@@ -799,6 +875,19 @@ p {
   .details-wrapper__subsection-solar-generator {
     margin-top: 1.25rem;
     margin-right: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .details-wrapper__subsection-solar-generator {
+    height: 100%;
+    width: 80%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1780px) {
+  .details-wrapper__subsection-solar-generator {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -873,18 +962,8 @@ p {
 }
 
 .glide__image {
-  width: 32.5rem;
+  width: 100%;
   height: 20.0625rem;
-}
-@media (max-width: 600px) {
-  .glide__image {
-    width: 100%;
-  }
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-  .glide__image {
-    width: 100%;
-  }
 }
 
 .glide__arrow {
@@ -930,6 +1009,11 @@ p {
     height: 3rem;
   }
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .glide__arrow--left {
+    margin-left: 0;
+  }
+}
 
 .glide__arrow--right {
   margin-right: 6rem;
@@ -950,6 +1034,11 @@ p {
   .glide__arrow--right img {
     width: 3rem;
     height: 3rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .glide__arrow--right {
+    margin-right: 0;
   }
 }
 
@@ -995,6 +1084,11 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .company-details__container {
+    gap: 24px;
   }
 }
 

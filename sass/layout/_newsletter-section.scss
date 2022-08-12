@@ -8,11 +8,11 @@
     h2 {
         margin-bottom: 0;
     }
-    @include max-media-screen($breakpoint--small){
-        margin-top:0.5rem;
+    @include max-media-screen($breakpoint--small) {
+        margin-top: 0.5rem;
         margin-bottom: 3rem;
-        h2{
-            @include text-style($fweight: 700,$fsize: 2.25rem, $lheight: 2.625rem, $color: $black-color);
+        h2 {
+            @include text-style($fweight: 700, $fsize: 2.25rem, $lheight: 2.625rem, $color: $black-color);
             margin-bottom: 0.75rem;
         }
     }
@@ -20,7 +20,7 @@
 
 .newsletters-section__p-container {
     max-width: 52.5rem;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         max-width: 19.5rem;
     }
 }
@@ -28,33 +28,27 @@
 .newsletters-section__paragraph {
     @include text-style($fweight: 500, $fsize: 1.5rem, $lheight: 1.75rem, $color: $black-color);
     text-align: center;
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         @include text-style($fweight: 500, $fsize: 1rem, $lheight: 1.1875rem, $color: $black-color);
     }
 }
-.glide-section{
+.glide-section {
     margin-top: 16.25rem;
-    h2{
+    h2 {
         display: none;
     }
-    @include max-media-screen($breakpoint--small){
+    @include max-media-screen($breakpoint--small) {
         margin-top: 0;
-        h2{
+        h2 {
             display: block;
         }
-     }
+    }
 }
-.glide__image{
-    width: 32.5rem;
+.glide__image {
+    width: 100%;
     height: 20.0625rem;
-    @include max-media-screen($breakpoint--small){
-       width: 100%;
-    }
-    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
-        width: 100%;
-    }
 }
-.glide__arrow{
+.glide__arrow {
     width: 6.25rem;
     height: 6.25rem;
     background: $green-color;
@@ -66,42 +60,48 @@
         background: $white-color;
         border-color: $white-color;
     }
-    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         width: 4.375rem;
         height: 4.375rem;
     }
 }
-.glide__arrow--left{
+.glide__arrow--left {
     margin-left: 6rem;
     @include max-media-screen($breakpoint--small) {
         margin-left: 0;
-        img{
+        img {
             width: 2rem;
             height: 2rem;
         }
     }
-    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         margin-left: 0;
-        img{
+        img {
             width: 3rem;
             height: 3rem;
         }
     }
+    @include min-max-media-screen($breakpoint--medium + 1, $breakpoint--large) {
+        margin-left: 0;
+    }
 }
-.glide__arrow--right{
+.glide__arrow--right {
     margin-right: 6rem;
     @include max-media-screen($breakpoint--small) {
         margin-right: 0;
-        img{
+        img {
             width: 2rem;
             height: 2rem;
         }
     }
-    @include min-max-media-screen($breakpoint--small + 1,$breakpoint--medium){
+    @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         margin-right: 0;
-        img{
+        img {
             width: 3rem;
             height: 3rem;
         }
+    }
+    @include min-max-media-screen($breakpoint--medium + 1, $breakpoint--large) {
+        margin-right: 0;
     }
 }

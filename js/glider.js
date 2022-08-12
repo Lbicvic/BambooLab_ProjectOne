@@ -11,6 +11,12 @@ new Glide('.glide', {
       },
       1024:{
         perView: 2,
+      },
+      1440:{
+        perView: 2,
+      },
+      1780:{
+
       }
     }
   }).mount()

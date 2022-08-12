@@ -29,6 +29,9 @@
         margin-right: auto;
         margin-bottom: 3rem;
     }
+    @include min-max-media-screen($breakpoint--medium + 1, $breakpoint--large) {
+       gap: 24px;
+    }
 }
 
 .company-details__adress,
