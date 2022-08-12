@@ -32,7 +32,18 @@
         @include text-style($fweight: 500, $fsize: 1rem, $lheight: 1.1875rem, $color: $black-color);
     }
 }
-
+.glide-section{
+    margin-top: 16.25rem;
+    h2{
+        display: none;
+    }
+    @include max-media-screen($breakpoint--small){
+        margin-top: 0;
+        h2{
+            display: block;
+        }
+     }
+}
 .glide__image{
     width: 32.5rem;
     height: 20.0625rem;

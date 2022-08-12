@@ -9,7 +9,11 @@ nav {
     margin: 0 6.75rem 0 6.75rem;
     align-items: center;
     @include max-media-screen($breakpoint--small) {
+        height: 4rem;
         margin: 0 2rem 0 2rem;
+        img{
+          height: 100%;
+        }
     }
 }
 
