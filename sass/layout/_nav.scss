@@ -87,7 +87,7 @@ nav {
 .hamburger-menu.show-hamburger-menu {
     display: flex;
     flex-direction: column;
-    height: 100%;
+
 }
 nav.hidden-body,
 main.hidden-body,
@@ -96,7 +96,7 @@ footer.hidden-body {
 }
 .hamburger-menu-x {
     align-self: flex-end;
-    display: inline-block;
+    display: block;
     width: 2rem;
     height: 2rem;
     background: $white-color;
@@ -117,7 +117,7 @@ footer.hidden-body {
     }
 }
 .hamburger-menu__list-button {
-    min-height: 550px;
+    height: 34.375rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

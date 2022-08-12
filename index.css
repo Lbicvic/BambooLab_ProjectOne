@@ -251,7 +251,6 @@ nav {
 .hamburger-menu.show-hamburger-menu {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 nav.hidden-body,
@@ -262,7 +261,7 @@ footer.hidden-body {
 
 .hamburger-menu-x {
   align-self: flex-end;
-  display: inline-block;
+  display: block;
   width: 2rem;
   height: 2rem;
   background: #FEFEFE;
@@ -284,7 +283,7 @@ footer.hidden-body {
 }
 
 .hamburger-menu__list-button {
-  min-height: 550px;
+  height: 34.375rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -677,6 +676,9 @@ p {
     height: fit-content;
     margin: 0;
   }
+  .details-wrapper__wind-image-wrapper .greenDiv {
+    min-height: 1rem;
+  }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   .details-wrapper__wind-image-wrapper {
@@ -810,6 +812,9 @@ p {
     height: -moz-fit-content;
     height: fit-content;
     margin: 0;
+  }
+  .details-wrapper__solar-image-wrapper .greenDiv {
+    min-height: 1rem;
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -993,7 +998,7 @@ p {
 }
 @media (max-width: 600px) {
   .glide__arrow--left {
-    margin-left: 0;
+    margin-left: 1.5rem;
   }
   .glide__arrow--left img {
     width: 2rem;
@@ -1020,7 +1025,7 @@ p {
 }
 @media (max-width: 600px) {
   .glide__arrow--right {
-    margin-right: 0;
+    margin-right: 1.5rem;
   }
   .glide__arrow--right img {
     width: 2rem;

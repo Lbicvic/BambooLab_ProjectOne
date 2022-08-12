@@ -68,7 +68,7 @@
 .glide__arrow--left {
     margin-left: 6rem;
     @include max-media-screen($breakpoint--small) {
-        margin-left: 0;
+        margin-left: 1.5rem;
         img {
             width: 2rem;
             height: 2rem;
@@ -88,7 +88,7 @@
 .glide__arrow--right {
     margin-right: 6rem;
     @include max-media-screen($breakpoint--small) {
-        margin-right: 0;
+        margin-right: 1.5rem;
         img {
             width: 2rem;
             height: 2rem;

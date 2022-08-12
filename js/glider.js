@@ -7,7 +7,8 @@ new Glide('.glide', {
     peek: "100px",
     breakpoints : {
       600: {
-        perView: 1
+        perView: 1,
+        peek:"45px"
       },
       1024:{
         perView: 2,
@@ -15,8 +16,5 @@ new Glide('.glide', {
       1440:{
         perView: 2,
       },
-      1780:{
-
-      }
     }
   }).mount()

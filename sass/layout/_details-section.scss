@@ -49,6 +49,9 @@
         width: auto;
         height: fit-content;
         margin: 0;
+        .greenDiv{
+            min-height: 1rem;
+        }
     }
     @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         margin: 0 auto;
@@ -136,6 +139,9 @@
         width: auto;
         height: fit-content;
         margin: 0;
+        .greenDiv{
+            min-height: 1rem;
+        }
     }
     @include min-max-media-screen($breakpoint--small + 1, $breakpoint--medium) {
         width: auto;
