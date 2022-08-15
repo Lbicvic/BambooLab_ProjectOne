@@ -84,18 +84,16 @@ nav {
 .hamburger-menu {
     display: none;
 }
-.hamburger-menu.show-hamburger-menu {
+.show-hamburger-menu {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin-left: 2rem;
 }
-nav.hidden-body,
-main.hidden-body,
-footer.hidden-body {
+.hidden-body {
     display: none;
 }
-.hamburger-menu-x {
+.hamburger-menu__x {
     align-self: flex-end;
     display: block;
     width: 2rem;

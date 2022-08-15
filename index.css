@@ -252,20 +252,18 @@ nav {
   display: none;
 }
 
-.hamburger-menu.show-hamburger-menu {
+.show-hamburger-menu {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin-left: 2rem;
 }
 
-nav.hidden-body,
-main.hidden-body,
-footer.hidden-body {
+.hidden-body {
   display: none;
 }
 
-.hamburger-menu-x {
+.hamburger-menu__x {
   align-self: flex-end;
   display: block;
   width: 2rem;
@@ -274,16 +272,16 @@ footer.hidden-body {
   margin-top: 1rem;
   margin-right: 1.9375rem;
 }
-.hamburger-menu-x span {
+.hamburger-menu__x span {
   width: 1.25rem;
   height: 0.125rem;
   margin: 0.3125rem auto;
   background: #333333;
 }
-.hamburger-menu-x span:first-child {
+.hamburger-menu__x span:first-child {
   transform: rotate(45deg);
 }
-.hamburger-menu-x span:last-child {
+.hamburger-menu__x span:last-child {
   transform: rotate(-45deg);
   transform-origin: left bottom;
 }
@@ -1134,6 +1132,7 @@ p {
 .company-details__adress p:first-child {
   font-size: 1.5rem;
   line-height: 1.75rem;
+  margin: 1.125rem 0;
 }
 
 .company-details__logo {
